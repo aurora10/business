@@ -1,0 +1,11 @@
+.col-md-offset-0 {
+    text-align: center;
+    margin-left: 0; 
+}
+
+.home-service-wrap ul li {
+    padding-left: 1.69rem;
+    background: url("../img/list-marker-chevron-red.png") no-repeat left 0.5rem;
+    text-align: left;
+}
+

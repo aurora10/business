@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.businesswaretech.com/blog/computer-vision-use-cases-anyone-can-implement-now-businessware-technologies by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:26:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-178399-12', 'auto');
+                ga('require', 'displayfeatures');
+		ga('send', 'pageview');
+
+	</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60879e0062662a09efc26df1/1f48s2d4p';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=fd6e5a82ee456' async='true'></script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59R9LPM');</script>
+<!-- End Google Tag Manager --><!-- Global site tag (gtag.js) - Google Ads: 1069634492 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1069634492"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1069634492');
+</script><!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '412789549591616');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=412789549591616&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code --><!-- DO NOT MODIFY -->
+<!-- Quora Pixel Code (JS Helper) -->
+<script>
+!function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+qp('init', '7a7c8894782e4b748998df62a8a793b8');
+qp('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/7a7c8894782e4b748998df62a8a793b8/pixel?tag=ViewContent&amp;noscript=1"/></noscript>
+<!-- End of Quora Pixel Code -->
+
+		<link rel="icon" type="image/ico" href="../files/settings/favicon.ico" />
+	
+
+	<title>Computer vision use cases anyone can implement now | Businessware Technologies</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="Computer vision is not only one of the hottest research fields in computer science, but also a significant part of our everyday lives. The tech we use everyday" />
+
+	<link rel="canonical" href="computer-vision-use-cases-anyone-can-implement-now-businessware-technologies.html" />
+
+	<script src="../web/assets/js/jquery.min.js"></script>
+
+    <link href="../web/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../web/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+	
+	   	<link href="../web/assets/js/sumoselect/sumoselect.min.css" rel="stylesheet" />
+    	<script src="../web/assets/js/sumoselect/jquery.sumoselect.min.js"></script>
+	
+
+	<link href="../web/assets/js/slick/slick.css" rel="stylesheet" />
+	<script src="../web/assets/js/slick/slick.min.js"></script>
+
+
+	<link href="../web/assets/css/fonts3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/theme3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/responsive3860.css?v=1" rel="stylesheet" />
+
+
+	
+
+
+	<script src="../web/assets/js/utils3860.js?v=1"></script>
+	<script src="../web/assets/js/main3860.js?v=1"></script>
+
+
+	
+
+	<style>
+		
+	</style>
+
+	
+</head>
+<body>
+    <a title="Scroll Up" aria-label="Scroll Up" class="affix-top" href="#top" id="scrollup" data-spy="affix" data-offset-top="101"><span class="fa fa-long-arrow-up"></span></a>
+
+
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59R9LPM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- PAGE_BODY -->
+<section id="page-wrap">
+	<header id="header">
+	<nav class="navbar">
+		<!-- navbar_header -->
+		<div id="navbar-header-wrap">
+			<div class="container">
+				<div class="navbar-header">
+					<a  title="Home"  class="navbar-brand "  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a>
+					<button id="mobile_nav_btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target-custom="#navigation">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars fa-lg"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- navbar_header -->
+
+		<!-- main_nav -->
+		<div class="collapse navbar-collapse" id="navigation">
+			<div id="top-nav" class="top-section">
+				<div class="container">
+					<div class="menu-search-form">
+	<form class="navbar-form" id="top-search" name="frmSearch" method="GET" action="https://www.businesswaretech.com/search-results">
+		<input name="sstr" type="text" placeholder="Search" title="Search" />
+		<button class="btn-toggle" type="button"><span class="fa fa-search"></span></button>
+		<button class="btn-close" type="button"><span class="fa fa-close"></span></button>
+	</form>
+</div>
+
+
+<script>
+	var $topmenuSearchApp = $(".menu-search-form");
+	var $searchControl = $("#top-search");
+	var $searchControlInput = $searchControl.find('input[name="sstr"]');
+
+	$searchControl.submit(function(e){
+		if ($searchControl.find('input[name="sstr"]').val()=="") {
+			e.preventDefault();
+		}
+	});
+
+	$searchControlInput.focusout(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.removeClass("expanded");
+		}
+	});
+
+	$topmenuSearchApp.find("#search-toggle-link, .btn-toggle").click(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.addClass("expanded");
+			$searchControlInput.focus();
+		} else {
+			$searchControl.first().submit();
+		}
+	});
+
+	$searchControl.find(".btn-close").click(function(){
+		$searchControl.removeClass("expanded");
+	});
+</script>
+					<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+					<div class="social-block">
+						<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+						<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+						<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+					</div>
+				</div>
+			</div>
+			<div id="main-nav">
+				<div class="container">
+					
+	<ul class="nav navbar-nav">
+		
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Services</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Tech Stack</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../frontend-development.html">Frontend</a></li>
+			
+				<li class=""><a  class="" href="../backend-development.html">Backend</a></li>
+			
+				<li class=""><a  class="" href="../mobile.html">Mobile</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Expertise</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../computer-vision.html">Computer vision</a></li>
+			
+				<li class=""><a  class="" href="../chat-apps.html">Chat apps</a></li>
+			
+				<li class=""><a  class="" href="../health-and-fitness-apps.html">Fitness apps</a></li>
+			
+				<li class=""><a  class="" href="../enterprise-portals.html">Enterprise portals</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Focus</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../ai-and-machine-learning.html">AI & Machine learning</a></li>
+			
+				<li class=""><a  class="" href="../architecture-and-cloud-engineering.html">Cloud engineering</a></li>
+			
+				<li class=""><a  class="" href="../mvp-and-startups.html">MVP & Startups</a></li>
+			
+				<li class=""><a  class="" href="../business-automation.html">Business automation</a></li>
+			
+					</ul>
+				</li>
+			
+					</ul>
+				</li>
+			
+				<li class=""><a  class="" href="../case-studies.html">Case Studies</a></li>
+			
+				<li class=""><a  class="" href="../portfolio.html">Portfolio</a></li>
+			
+				<li class=""><a  class="" href="../about-us.html">Company</a></li>
+			
+		<li class="menu-btn-item"><a   class=""  href="../contact.html">Contact</a></li>
+	</ul>
+	
+				</div>
+			</div>
+		</div>
+		<!-- main_nav -->
+
+	</nav>
+</header>
+
+
+
+
+	<section class="internal-header bg-red-gradient overlay-color-pattern color-white">
+	<div class="container">
+		<h1>Blog</h1>
+	</div>
+</section>
+
+
+	<section id="blog-module-wrap">
+		<section id="blog-post" class="content-section">
+			<div class="container">
+				<div class="blog-post-header mb mb-big-xs">
+					<div class="header-wrap">
+						<h1>Computer vision use cases anyone can implement now</h1>
+						<div class="textbox mb-half">
+							<div class="post-date small">
+								<span>March 15, 2021</span>
+								
+							</div>
+						</div>
+						<div class="post-tools small">
+							
+								<div class="item social-links">
+									
+	<div class="addthis_sharing_toolbox" style="margin-bottom:-5px;">
+		<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			<a class="a2a_button_facebook"></a>
+			<a class="a2a_button_twitter"></a>
+			<a class="a2a_button_email"></a>
+		</div>
+	</div>
+
+								</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<!-- main-col -->
+					
+					<div class="col-md-12">
+					 
+							<div class="textbox">
+								<img alt="Computer vision use cases anyone can implement now" src="../files/blog/items/cv-full.jpg" />
+							</div>
+						
+
+						<div class="post-content mb-big">
+							<h2>Contents</h2>
+							<div class="textbox">
+								<ol id="tocList"></ol>
+							</div>
+						</div>
+
+						<div id="blog_main_content_wrap" class="textbox mb">
+							<p>With early experiments in computer vision starting in the 1950s, the field has gone a long way and the applications of computer vision have grown exponentially.</p>
+
+<p>Computer vision is not only one of the hottest research fields in computer science, but also a significant part of our everyday lives. The tech we use everyday often has computer vision algorithms running in the background.</p>
+
+<h2>What is computer vision</h2>
+
+<p>In general, computer vision is an area of artificial intelligence whose main goal is to teach computers how to &lsquo;see&rsquo;, or to analyse and interpret various visual data and then make decisions based on it. The amount of visual data that we generate daily - image, video, and even sound - is one of the driving factors behind the growth of computer vision, as this data is then used to train computer vision algorithms and make them better.</p>
+
+<p>With the advancements in hardware, the computing power required to analyze the visual data is now more accessible and affordable, leading to an increase of accuracy of object identification from 50% to 99% in less than a decade.</p>
+
+<p>While there are many uses of computer vision algorithms they may seem out of reach, too complex and expensive, painting the whole field as &lsquo;too expensive&rsquo;, &lsquo;too ambitious&rsquo;, and generally &lsquo;too much&rsquo; for a regular business owner, we are sure computer vision is a lot more accessible as it may seem at first. Having worked on a number of computer vision projects, we have seen first hand how powerful it can be.</p>
+
+<h2>Optical character recognition (OCR) for text recognition</h2>
+
+<p>Recognition of text characters is one of the most trivial yet widely used areas of computer vision. OCR is often used to detect text and convert it into an editable format, like turning a scanned document into a .docx document or turning PDF tables into Excel ones for editing. OCR is a technology that has found applications throughout a large spectrum of industries where immediate saving of labor - otherwise lost in retyping of typewritten or handwritten text - is realised.</p>
+
+<h3>Text recognition</h3>
+
+<p>One of the first applications that turned PDF text into Word and Excel documents is ABBYY FineReader. Nowadays, OCR is implemented into many different applications, both desktop and mobile, and is used to analyse not only typewritten text, but also handwritten writing.</p>
+
+<p>The technology has grown so reliable that establishments that need a high level of data security, like banks and hospitals, use text recognition software for analysing important documents, like handwritten cheques, invoices, legal paperwork, hospitals records, etc.</p>
+
+<p>We have implemented various text recognition tools and approaches into our client&#39;s systems for faster document processing and editing. Usually, these systems utilise ready-made solutions that only require proper implementation and tuning, making them fast and rather inexpensive to develop.</p>
+
+<h3>Special character recognition</h3>
+
+<p>Certain businesses, like architectural bureaus, often work with specialised symbols that are not easily recognised by standard text recognition tools. These tasks - recognition of complex objects - is where computer vision shines best. Computer vision algorithms can be trained to accurately and reliably detect whatever symbol or character you need, no matter its position or size on the page.</p>
+
+<p>We have had a chance to utilize the full potential of computer vision when working with a blueprint recognition system which reduces the time needed to compile a bill of quantities - a full list of objects present in a blueprint, like doors, windows, outlents, plumbing, etc. and a price estimation. The system detects symbols specified by the user, like doors, electrical outlets, toilets, etc., counts them and compiles a list of detected objects along with their price.</p>
+
+<p style="text-align: center;"><img alt="" src="../files/content/blogimg/computer%20vision/cv-floorplan.png" /></p>
+
+<h3>Recognition of complex graphic objects</h3>
+
+<p>Things like PDF tables, diagrams and various charts consist of a combination of text, special symbols and geometrical shapes, and can also be transformed from a PDF to an editable format in a matter of seconds. But the complex nature of these objects means that standard OCR tools, of which there are many, often can&rsquo;t handle the task or do so very low accuracy. Custom OCR systems are the way to go in these cases.</p>
+
+<p>One of the examples we have is a transformation of complex PDF spreadsheets into Excel ones for editing. Readymade solutions are not capable of handling complex spreadsheets as they often contain merged cells, data which is spread out across multiple PDF pages, etc. With the power of computer vision we have developed a system which accurately transforms such spreadsheets into an editable format in a matter of seconds.</p>
+
+<p style="text-align: center;"><img alt="" src="../files/content/blogimg/computer%20vision/cv-pdf.png" /></p>
+
+<h2>Computer vision in health and wellness</h2>
+
+<p>Computer vision has become reliable enough to be used in the medical field. While the use of image recognition for detecting cancer or cell classification may still be in its beginning stages, computer vision is already widely used for more mundane, yet equally as important tasks.</p>
+
+<p>Image recognition, along with text recognition, is used to augment traditional medical devices and interpret data received from them. For example, most glucometers - the devices which measure blood sugar levels - only provide a couple of numbers as output. Users don&rsquo;t get the insights important for interpreting the results correctly, like their average blood sugar or the normal blood sugar levels to compare their results to.</p>
+
+<p>Instead of buying an entirely new and more expensive device, a simple app powered by computer vision can provide necessary insights by analysing a photo of a screen of a medical device in question. We have worked on an app which analyses photos of glucometer&rsquo;s screen and have seen just how powerful image recognition can be.</p>
+
+<h2>Analyse photos and videos for marketing purposes</h2>
+
+<p>Computer vision allows to extract a multitude of attributes from a photo or a video, including dominant colors, objects present in the photo or video, etc. Paired with text generation, computer vision-powered systems can be a powerful marketing tool, and the data extracted can be used for further analysis and aid in decision making and building a marketing strategy.</p>
+
+<p>Computer vision can be a part of a larger marketing system or can be used on its own to extract relevant data for further interpretation. Automatic caption generation systems, like the one we have developed for Instagram, use computer vision to detect the objects present in the photo, which are then used as a basis for the caption. Coupled with text generation algorithms, these systems can mimic human-written text to the point where it will be very hard to distinguish between the two. This greatly reduces marketing efforts and increases content production.</p>
+
+<p style="text-align: center;"><img alt="" src="../files/content/blogimg/computer%20vision/cv-instagram.png" /></p>
+
+<p>However, computer vision really shines when it comes to extracting data which is not obvious to the human eye, like dominant colors in a photo or video, for classification of visual data. Extracting such data makes it easier - or even possible - to classify and rank visual data which otherwise may seem completely inhomogeneous.</p>
+
+<p>One of our most interesting projects is a development of a video analysing system which determines dominant colors in mobile game footage and compares them to common color schemes to determine how visually pleasing the game will be to the players.</p>
+
+<p style="text-align: center;"><img alt="" src="../files/content/blogimg/computer%20vision/cv-games.jpg" /></p>
+
+<p>Ranking different games according to how visually pleasant they are helps to determine how successful it will be commercially and which ones are worth investing money in. These conclusions are hard, if not impossible, to make when looking at footage with a naked eye, when all you can rely on is a &lsquo;gut feeling&rsquo;. Formalisation of tasks like these is impossible without computer vision.</p>
+
+<h2>Automated document processing</h2>
+
+<p>Image recognition is widely used when working with documents, even in the most conservative establishments that require a high level of document security and accuracy, like banks and hospitals, which all now have implemented computer vision-based systems into their everyday document processing routines. These systems are often used to mitigate manual data entry and verify documents, for example, verify a signature on a cheque.</p>
+
+<p>It may seem that the implementation of computer vision may only be accessible to large, well-established companies, like large banks or private hospitals, but it couldn&rsquo;t be farther from the truth. Implementing computer vision into document processing routines is now more accessible and affordable than ever, while providing huge benefits in a form of saved labour on manual data entry as well as money savings, and increasing the accuracy.</p>
+
+<p>Computer vision algorithms can analyse scanned documents and extract any data you may need. This makes it an excellent tool for document verification. We have seen this first hand when working on a checkpoint system for a company whose offices are located across multiple buildings. In order to check if a person has the required level of access to a particular building, their ID is scanned to verify their data is present in a database. Before, the employee had to manually type in the data which took a long time and a lot more effort.</p>
+
+<h2>Object detection on video</h2>
+
+<p>Detection of objects on video, be it how many people have entered a shopping center or detecting when an industrial process has gone wrong, is still widely done by humans. This approach, while being the most straightforward one, is definitely not the most effective, cost efficient or reliable. Computer vision makes it possible to automate this task at a relatively low upfront cost, while greatly improving the detection accuracy and decreasing downtime, like lunch breaks and sick leaves.</p>
+
+<p>Object detection systems are now accessible to anyone and their use is not constrained only to sci-fi movies. It is now used everywhere, from government surveillance and self-driving vehicles to monitoring simple processes like at-home 3D printing.</p>
+
+<p>We have had an opportunity to develop a system that monitors the position of a safe waterway in ice-covered waters to help ships navigate them without excessive fuel losses which happen when the ship goes outside the safe waterway. The system receives a live video from one of the ship&rsquo;s cameras as input and outputs the position of a waterway and plots a safe course.</p>
+
+<p style="text-align: center;"><img alt="" src="../files/content/blogimg/computer%20vision/cv-ship.gif" /></p>
+
+<p>Computer vision can be used to track more mundane processes than ships navigating through sea ice, but ones that still require constant supervision. One of them is at-home 3D printing, where prints can take up to several days, and an average print takes at least a couple of hours. Besides taking a long time to complete, the 3D printing process is very prone to going wrong or failing completely as there are a multitude of factors influencing the outcome of the print, like how high or low the ambient temperature is, the presence of drafts, the quality of the filament and many more. If something goes wrong, the printing process will result in a pile of randomly extruded plastic filament, also known as &lsquo;spaghetti&rsquo;.</p>
+
+<p style="text-align: center;"><img alt="" src="../files/content/blogimg/computer%20vision/cv-printer.jpg" /></p>
+
+<p>3D printers are not equipped with tools that would allow them to detect when something goes wrong, making human supervision the only way to prevent waste of plastic filament. But as prints take hours to complete, monitoring it yourself is not a feasible idea, and that&rsquo;s where computer vision comes into play.</p>
+
+<p>We have participated in a development of a &lsquo;spaghetti&rsquo; detection system that monitors a video stream of a printing process and detects when something goes wrong, alerting the user.</p>
+
+<p style="text-align: center;"><img alt="" src="../files/content/blogimg/computer%20vision/cv-printer-app.png" /></p>
+
+<h2>How to implement computer vision into your workflow</h2>
+
+<p>While there are expensive, complex visual data recognition systems out there, computer vision as a whole should not be treated as such. It is a tool that can both automate small everyday tasks, like text recognition, as well as be a part of complex systems used by the largest corporations. Gone are the days where machine learning in general, and computer vision in particular, were a rarity and available to a few - these days, anyone can take advantage of these technologies and use them to their benefit.</p>
+
+<p>Having worked on numerous computer vision projects, we have seen just how powerful it can be and how it can transform businesses at a minimal cost. Using standard computer vision tools or using a more custom approach and developing a system from scratch - our team of machine learning experts are always looking for ways to use computer vision to its full potential and bring the most benefit to our clients.</p>
+
+<p>If you are interested in developing your own computer vision system, drop us a line at sales@businesswaretech.com and we will get back to you.</p>
+
+						</div>
+
+						
+							<div class="button-wrap-under-text mb-big">
+								
+									<a href="how-natural-language-processing-is-reshaping-marketing-strategy.html"><span class="fa fa-angle-left"></span> Previous Post</a>
+								
+									<a href="machine-learning-for-floor-plan-recognition.html">Next Post <span class="fa fa-angle-right"></span></a>
+								
+							</div>
+						
+
+						<div class="post-tools small mb-big">
+							
+								<div class="item social-links">
+									
+	<div class="addthis_sharing_toolbox" style="margin-bottom:-5px;">
+		<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			<a class="a2a_button_facebook"></a>
+			<a class="a2a_button_twitter"></a>
+			<a class="a2a_button_email"></a>
+		</div>
+	</div>
+
+								</div>
+							
+						</div>
+
+						
+
+					</div>
+					<!-- /main-col -->
+
+					
+				</div>
+
+				    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-label="Login">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<form name="frmBlogLogin" method="post">
+	                <div class="modal-header">
+    	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	            <h4 class="modal-title">Login</h4>
+            	    </div>
+	                <div class="modal-body">
+						<div style="display:none;" class="form_status alert alert-danger mb"></div>
+						<div class="form-group mb embed-label">
+							<input title="Login" type="text" name="bu_login" class="form-control" />
+							<label>Login</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Password" type="password" name="bu_password" class="form-control" autocomplete="off"/>
+							<label>Password</label>
+						</div>
+            	    </div>
+	                <div class="modal-footer">
+    	                <button type="button" class="btn btn-transparent" data-dismiss="modal"><span>Close</span></button>
+        	            <button type="submit" class="btn btn-default"><span>Login</span></button>
+            	    </div>
+				</form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-label="Register">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<form name="frmBlogReg" method="post" enctype="multipart/form-data">
+	                <div class="modal-header">
+    	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	            <h4 class="modal-title">Register</h4>
+            	    </div>
+                	<div class="modal-body">
+						<div style="display:none;" class="form_status alert alert-danger mb"></div>
+
+                    	<div class="form-group mb embed-label">
+							<input title="Username" type="text" name="bu_login" class="form-control" />
+							<label>Username*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Password" type="password" name="bu_password" class="form-control" autocomplete="off" />
+							<label>Password*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="First Name" type="text" name="bu_first" class="form-control"/>
+							<label>First Name*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Last Name" type="text" name="bu_last" class="form-control" />
+							<label>Last Name*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Email" type="email" name="bu_email" class="form-control" />
+							<label>Email*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<label>Image (88x80)</label>
+							<div class="upload-control custom_upload_control"><input title="File Name" type="text" placeholder="No File Selected" class="form-control file-name upload_file_caption" DISABLED/><div class="upload_file_btn btn btn-default"><span>Select File</span><input title="File Upload" type="file" name="bu_avatar_image" /></div></div>
+						</div>
+        	        </div>
+	                <div class="modal-footer">
+    	                <button type="button" class="btn btn-transparent" data-dismiss="modal"><span>Close</span></button>
+        	            <button type="submit" class="btn btn-default"><span>Register</span></button>
+	                </div>
+				</form>
+            </div>
+        </div>
+    </div>
+
+			</div>
+		</section>
+
+		
+	<section class="content-section related-section">
+		<div class="container">
+		
+			<h3>You May Like</h3>
+			
+				<div class="related-projects-slider slider-type-blog">
+					
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/21/thumb/blog_landing-min.jpg" alt="AI-powered Digital Media Recommendation System" />
+							</div>
+							<div class="content-block">
+								<h6>AI-powered Digital Media Recommendation System</h6>
+								<a href="../case-studies/ai-powered-digital-media-recommendation-system.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/ai-powered-digital-media-recommendation-system.html" title="AI-powered Digital Media Recommendation System" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/projects/184/thumb/blog_eye-training-app-landing-v2-(1).png" alt="Eye Tracking App for Preventing Eye Strain" />
+							</div>
+							<div class="content-block">
+								<h6>Eye Tracking App for Preventing Eye Strain</h6>
+								<a href="../portfolio/eye-tracking-app-for-preventing-eye-strain.html" class="more-link">Read More</a>
+							</div>
+							<a href="../portfolio/eye-tracking-app-for-preventing-eye-strain.html" title="Eye Tracking App for Preventing Eye Strain" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/blog/items/ai-marketing-landing.jpg" alt="How Natural Language Processing Is Reshaping Marketing Strategy" />
+							</div>
+							<div class="content-block">
+								<h6>How Natural Language Processing Is Reshaping Marketing Strategy</h6>
+								<a href="how-natural-language-processing-is-reshaping-marketing-strategy.html" class="more-link">Read More</a>
+							</div>
+							<a href="how-natural-language-processing-is-reshaping-marketing-strategy.html" title="How Natural Language Processing Is Reshaping Marketing Strategy" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/20/thumb/blog_gtp-3-landing-min.jpg" alt="Marketing Content Generation System Using GPT-3" />
+							</div>
+							<div class="content-block">
+								<h6>Marketing Content Generation System Using GPT-3</h6>
+								<a href="../case-studies/marketing-content-generation-system-using-gpt-3.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/marketing-content-generation-system-using-gpt-3.html" title="Marketing Content Generation System Using GPT-3" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/15/thumb/blog_streams-landing.jpg" alt="Mobile app for remote video monitoring" />
+							</div>
+							<div class="content-block">
+								<h6>Mobile app for remote video monitoring</h6>
+								<a href="../case-studies/mobile-app-for-remote-video-monitoring.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/mobile-app-for-remote-video-monitoring.html" title="Mobile app for remote video monitoring" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/17/thumb/blog_work-orders-landing.png" alt="PDF files recognition system for an architectural bureau" />
+							</div>
+							<div class="content-block">
+								<h6>PDF files recognition system for an architectural bureau</h6>
+								<a href="../case-studies/pdf-files-recognition-system-for-an-architectural-bureau-2.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/pdf-files-recognition-system-for-an-architectural-bureau-2.html" title="PDF files recognition system for an architectural bureau" class="area-link"></a>
+						</div>
+						
+				</div>
+			
+		</div>
+	</section>
+	
+
+	</section>
+
+
+	<script src="../web/assets/js/jquery.contentstable.js"></script>
+	<script>
+		$("#blog_main_content_wrap").tableOfContents("#tocList");
+		if ($("#tocList").find("li").length==0) $("#tocList").parents(".post-content").remove();
+	</script>
+
+	<link rel="stylesheet" href="../web/modules/blog/css/blog-module.css" type="text/css" />
+	<link rel="stylesheet" href="../web/modules/blog/css/blog-theme.css" type="text/css" />
+
+	<script src="../web/modules/blog/js/main.js"></script>
+
+	<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+	<script src="../web/modules/blog/js/jquery.autogrow-textarea.min.js"></script>
+	<script src="../web/modules/blog/js/post_details.js"></script>
+
+
+
+
+</section>
+<!-- /PAGE_BODY -->
+
+<footer id="footer" class="bg-dark overlay-color-pattern">
+	<div class="container">
+		<div class="row content-section">
+	<div class="col-sm-3 mb-big-xs">
+	<div class="footer-logo"><a  title="Home"  class=""  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a></div>
+	<h6 class="mb-half">Social Media</h6>
+	<div class="social-block">
+		<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+		<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+		<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+	</div>
+</div>
+
+<div class="col-sm-4 mb-big-xs">
+	<h5>US Office</h5>
+	<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+	<div class="phone-block"><a   class=""  href="mailto:sales@businesswaretech.com"><span class="fa fa-envelope"></span>sales@businesswaretech.com</a></div>
+</div>
+
+<div class="col-sm-5 mb-big-xs">
+	<h5>Site Menu</h5>
+	
+		<ul class="footer-menu">
+	<li><a href="../about-us.html">About us</a></li>
+	<li><a href="../case-studies.html">Case Studies</a></li>
+	<li><a href="../portfolio.html">Portfolio</a></li>
+	<li><a href="../blog.html">Blog</a></li>
+	<li><a href="../contact.html">Contact</a></li>
+	<li><a href="../privacy-policy.html">Privacy Policy</a></li>
+</ul>
+					
+	
+</div>
+
+
+</div>
+
+<div class="sep-white"></div>
+	<div class="footer-bottom-section">
+	<div class="small">&copy; BUSINESSWARE TECHNOLOGIES INC., 2003-2021. All rights reserved.</div>
+	
+</div>
+
+	
+	</div>
+</footer>
+
+	<script src="../web/assets/js/bootstrap.min.js"></script>
+
+	<!-- Twitter universal website tag code -->
+<!--script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o2ndw');
+twq('track','PageView');
+</script-->
+<!-- End Twitter universal website tag code -->
+
+
+</body>
+
+<!-- Mirrored from www.businesswaretech.com/blog/computer-vision-use-cases-anyone-can-implement-now-businessware-technologies by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:26:33 GMT -->
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.businesswaretech.com/blog/machine-learning-for-floor-plan-recognition by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:26:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-178399-12', 'auto');
+                ga('require', 'displayfeatures');
+		ga('send', 'pageview');
+
+	</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60879e0062662a09efc26df1/1f48s2d4p';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=fd6e5a82ee456' async='true'></script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59R9LPM');</script>
+<!-- End Google Tag Manager --><!-- Global site tag (gtag.js) - Google Ads: 1069634492 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1069634492"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1069634492');
+</script><!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '412789549591616');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=412789549591616&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code --><!-- DO NOT MODIFY -->
+<!-- Quora Pixel Code (JS Helper) -->
+<script>
+!function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+qp('init', '7a7c8894782e4b748998df62a8a793b8');
+qp('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/7a7c8894782e4b748998df62a8a793b8/pixel?tag=ViewContent&amp;noscript=1"/></noscript>
+<!-- End of Quora Pixel Code -->
+
+		<link rel="icon" type="image/ico" href="../files/settings/favicon.ico" />
+	
+
+	<title>Machine Learning  For Floor Plan Recognition | Custom Software Development Services  | Businessware Technologies</title>
+	<meta name="keywords" content="floorplan recognition, pdf recognition, computer vision development, computer vision services, custom software development, document recognition" />
+	<meta name="description" content="Processing documents fast and with high accuracy is key to completing a digital transformation. Nowadays, the success of any business' operations relies on the" />
+
+	<link rel="canonical" href="machine-learning-for-floor-plan-recognition.html" />
+
+	<script src="../web/assets/js/jquery.min.js"></script>
+
+    <link href="../web/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../web/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+	
+	   	<link href="../web/assets/js/sumoselect/sumoselect.min.css" rel="stylesheet" />
+    	<script src="../web/assets/js/sumoselect/jquery.sumoselect.min.js"></script>
+	
+
+	<link href="../web/assets/js/slick/slick.css" rel="stylesheet" />
+	<script src="../web/assets/js/slick/slick.min.js"></script>
+
+
+	<link href="../web/assets/css/fonts3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/theme3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/responsive3860.css?v=1" rel="stylesheet" />
+
+
+	
+
+
+	<script src="../web/assets/js/utils3860.js?v=1"></script>
+	<script src="../web/assets/js/main3860.js?v=1"></script>
+
+
+	
+
+	<style>
+		
+	</style>
+
+	
+</head>
+<body>
+    <a title="Scroll Up" aria-label="Scroll Up" class="affix-top" href="#top" id="scrollup" data-spy="affix" data-offset-top="101"><span class="fa fa-long-arrow-up"></span></a>
+
+
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59R9LPM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- PAGE_BODY -->
+<section id="page-wrap">
+	<header id="header">
+	<nav class="navbar">
+		<!-- navbar_header -->
+		<div id="navbar-header-wrap">
+			<div class="container">
+				<div class="navbar-header">
+					<a  title="Home"  class="navbar-brand "  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a>
+					<button id="mobile_nav_btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target-custom="#navigation">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars fa-lg"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- navbar_header -->
+
+		<!-- main_nav -->
+		<div class="collapse navbar-collapse" id="navigation">
+			<div id="top-nav" class="top-section">
+				<div class="container">
+					<div class="menu-search-form">
+	<form class="navbar-form" id="top-search" name="frmSearch" method="GET" action="https://www.businesswaretech.com/search-results">
+		<input name="sstr" type="text" placeholder="Search" title="Search" />
+		<button class="btn-toggle" type="button"><span class="fa fa-search"></span></button>
+		<button class="btn-close" type="button"><span class="fa fa-close"></span></button>
+	</form>
+</div>
+
+
+<script>
+	var $topmenuSearchApp = $(".menu-search-form");
+	var $searchControl = $("#top-search");
+	var $searchControlInput = $searchControl.find('input[name="sstr"]');
+
+	$searchControl.submit(function(e){
+		if ($searchControl.find('input[name="sstr"]').val()=="") {
+			e.preventDefault();
+		}
+	});
+
+	$searchControlInput.focusout(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.removeClass("expanded");
+		}
+	});
+
+	$topmenuSearchApp.find("#search-toggle-link, .btn-toggle").click(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.addClass("expanded");
+			$searchControlInput.focus();
+		} else {
+			$searchControl.first().submit();
+		}
+	});
+
+	$searchControl.find(".btn-close").click(function(){
+		$searchControl.removeClass("expanded");
+	});
+</script>
+					<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+					<div class="social-block">
+						<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+						<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+						<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+					</div>
+				</div>
+			</div>
+			<div id="main-nav">
+				<div class="container">
+					
+	<ul class="nav navbar-nav">
+		
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Services</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Tech Stack</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../frontend-development.html">Frontend</a></li>
+			
+				<li class=""><a  class="" href="../backend-development.html">Backend</a></li>
+			
+				<li class=""><a  class="" href="../mobile.html">Mobile</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Expertise</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../computer-vision.html">Computer vision</a></li>
+			
+				<li class=""><a  class="" href="../chat-apps.html">Chat apps</a></li>
+			
+				<li class=""><a  class="" href="../health-and-fitness-apps.html">Fitness apps</a></li>
+			
+				<li class=""><a  class="" href="../enterprise-portals.html">Enterprise portals</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Focus</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../ai-and-machine-learning.html">AI & Machine learning</a></li>
+			
+				<li class=""><a  class="" href="../architecture-and-cloud-engineering.html">Cloud engineering</a></li>
+			
+				<li class=""><a  class="" href="../mvp-and-startups.html">MVP & Startups</a></li>
+			
+				<li class=""><a  class="" href="../business-automation.html">Business automation</a></li>
+			
+					</ul>
+				</li>
+			
+					</ul>
+				</li>
+			
+				<li class=""><a  class="" href="../case-studies.html">Case Studies</a></li>
+			
+				<li class=""><a  class="" href="../portfolio.html">Portfolio</a></li>
+			
+				<li class=""><a  class="" href="../about-us.html">Company</a></li>
+			
+		<li class="menu-btn-item"><a   class=""  href="../contact.html">Contact</a></li>
+	</ul>
+	
+				</div>
+			</div>
+		</div>
+		<!-- main_nav -->
+
+	</nav>
+</header>
+
+
+
+
+	<section class="internal-header bg-red-gradient overlay-color-pattern color-white">
+	<div class="container">
+		<h1>Blog</h1>
+	</div>
+</section>
+
+
+	<section id="blog-module-wrap">
+		<section id="blog-post" class="content-section">
+			<div class="container">
+				<div class="blog-post-header mb mb-big-xs">
+					<div class="header-wrap">
+						<h1>Machine Learning  For Floor Plan Recognition</h1>
+						<div class="textbox mb-half">
+							<div class="post-date small">
+								<span>September 29, 2021</span>
+								
+							</div>
+						</div>
+						<div class="post-tools small">
+							
+								<div class="item social-links">
+									
+	<div class="addthis_sharing_toolbox" style="margin-bottom:-5px;">
+		<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			<a class="a2a_button_facebook"></a>
+			<a class="a2a_button_twitter"></a>
+			<a class="a2a_button_email"></a>
+		</div>
+	</div>
+
+								</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<!-- main-col -->
+					
+					<div class="col-md-12">
+					 
+							<div class="textbox">
+								<img alt="Machine Learning  For Floor Plan Recognition" src="../files/blog/items/machine-learning-for-document-recognitio---full-min.jpg" />
+							</div>
+						
+
+						<div class="post-content mb-big">
+							<h2>Contents</h2>
+							<div class="textbox">
+								<ol id="tocList"></ol>
+							</div>
+						</div>
+
+						<div id="blog_main_content_wrap" class="textbox mb">
+							<p>Processing documents fast and with high accuracy is key to completing a digital transformation. Nowadays, the success of any business&rsquo; operations relies on the ability to quickly and easily locate, access and edit document data. Document processing is a use case that is familiar to companies of any size. It has a great impact on a company&#39;s productivity regardless of its industry or focus.</p>
+
+<h2>Document Detection History: From OCR To AI</h2>
+
+<p>Document processing has gone through multiple stages in its development. Traditionally, all document processing was done manually, which had many downfalls. Many companies still deal with challenges like time lost to manual data extraction, incorrect labelling, etc.</p>
+
+<p>To combat these issues, businesses often turn to digitalisation. Many companies are not only processing documents digitally, but are making efforts to migrate to born-digital documents all together.</p>
+
+<h2>OCR For Document Digitization</h2>
+
+<p>While switching to &lsquo;digital first&rsquo; is getting more and more traction each year, most companies still have to convert physical documents into a digital format. This process often includes AI character and font recognition, special symbols recognition, document type recognition, etc. These tasks are solved using OCR, or optical character recognition, which helps to transform a physical document into an editable PDF file, detect, recognise and count special symbols or objects present in a document (which is important for documents that include floor plans, blueprints, etc), detect and recognise images.</p>
+<img alt="" src="../files/content/blogimg/flooorplan-recognition/machine-learning-for-document-recognitio---i1-min.jpg" style="width: 1140px; height: 500px;" />
+<p>Traditional OCR has significant limitations. The quality of OCR document recognition highly depends on the underlying document processed. Data extraction and classification is only as effective as the quality of the scanned image. OCR often has trouble differentiating between &lsquo;3&rsquo; and &lsquo;8&rsquo;, or &lsquo;O&rsquo; and &lsquo;D&rsquo;. These are the very challenges OCR is supposed to help solve, but instead they become new headaches when the quality of a scanned document is subpar.</p>
+
+<p><img alt="" src="../files/content/blogimg/flooorplan-recognition/machine-learning-for-document-recognitio---i2-min.jpg" style="width: 1140px; height: 500px;" /></p>
+
+<h2>AI-powered Document Recognition</h2>
+
+<p>In cases when PDF recognition has to be done with lower quality scans, AI-powered document recognition comes into play. AI capabilities have advanced to the point where it can be used for PDF recognition when traditional OCR fails. Companies that provide custom computer vision services are creating and training machine learning models to apply toward OCR.</p>
+
+<p>Model-based OCR engines, also known as intelligent OCR, provide far better results in document recognition applications, reducing errors and increasing processing speed. AI-powered document recognition helps companies digitize documents that before were challenging for legacy OCR systems, like blueprints, floor plans, handwritten documents, etc.</p>
+
+<h2>Floor Plan Recognition</h2>
+
+<p>Floor plans and blueprints are more often than not processed manually due to their complex structure and lack of standardisation. One of the primary focuses of floor plan processing is locating various objects, like doors, windows, electrical outlets, etc., as well as digitalisation of text and spreadsheets for editing.</p>
+
+<p>Due to how complex floor plans are, using a standard OCR-based approach for recognition is not effective. Tools that have proven themselves to be reliable for text recognition, like ABBYY and Microsoft, which we have used numerous times for passport recognition, spreadsheet recognition, barcode recognition, and many more, do not provide reliable results in case of blueprint recognition.</p>
+
+<p>Floor plan recognition, when compared to plain text recognition, is more complex. It involves special symbols and abbreviations which present a challenge for ready-made solutions. In order to achieve high quality results, custom computer vision system development is vital.</p>
+
+<h2>Machine Learning And AI For Recognising Floor Plans</h2>
+
+<p>As floor plans are complex documents that include a variety of sections and elements, the task of digitizing is typically divided into multiple parts according to the task at hand. One may want to digitize spreadsheets that come along with the floor plan to edit them, count how many times a particular symbol is present on the page, detect text, and many more.</p>
+
+<h3>Floor Plan Detection: Text</h3>
+
+<p>Information about floor plan type, building type, dimensions, etc. is, simply put, a text. Text detection and recognition is a rather simple task when it comes to modern computer vision, however detecting text on a floor plan is more complex. Text specific to floor plans usually contains special symbols, can come in any size, font and color, and can be placed at any angle, rotated to the size or even upside down.</p>
+
+<p>While regular text detection tools, like OCRSpace and IText, can be used with a rather high degree of accuracy for simple text, they are very ineffective when detecting text placed at a weird angle, like object dimensions. To achieve good detection results in these cases, there is a need for custom computer vision development.</p>
+
+<p><img alt="" src="../files/content/blogimg/flooorplan-recognition/machine-learning-for-document-recognitio---i3-min.jpg" style="width: 1140px; height: 500px;" /></p>
+
+<p>As most OCR tools can be fine tuned, a balancer module can compare different tool settings and choose the ones that produce the most accurate results, as well as compare the results of different tools and choose the best among them. Moreover, fine tuning OCR tools can greatly decrease document processing time - we have managed to achieve up to 200 times acceleration in document processing speed. Using OCR engines like Tesseract can further increase text recognition quality, providing up to 99,9% accuracy.</p>
+
+<p><img alt="" src="../files/content/blogimg/flooorplan-recognition/machine-learning-for-document-recognitio---i4-min.jpg" style="width: 1140px; height: 500px;" /></p>
+
+<h3>Floor Plan Detection: Labels And Special Symbols</h3>
+
+<p>Labels and special symbols which mark specific objects, like doors, windows, electrical outlets, etc. on a floor plan often need to be counted to prepare a bill of quantities or other documentation. This is usually done manually and takes a lot of time, which increases the probability of a mistake.</p>
+
+<p>Labels usually look like geometrical figures which are difficult to distinguish from its surroundings on a floor plan. The variability of labels used to represent the same object also adds to the processing difficulty.</p>
+
+<p><img alt="" src="../files/content/blogimg/flooorplan-recognition/machine-learning-for-document-recognitio---i5-min.jpg" style="width: 1140px; height: 500px;" /></p>
+
+<p>Ready-made computer vision solutions, like OpenCV libraries for symbol detection, work best with color photographs that depict real world objects, like photos of people or animals. Floor plans, on the other hand, are black and white and mostly consist of geometric figures. Regular OpenCV methods work with varied success and often need to be finetuned and built upon to achieve a high enough recognition accuracy sufficient for business needs.</p>
+
+<p>One of the main problems with detecting special symbols on a floor plan is false positive results. Floor plan structure consists of simple geometric shapes, but so do special symbols and labels, making the latter difficult to distinguish from its surroundings. One of the ways this issue can be mitigated is through the use of deep learning. It can be implemented to detect inaccurate detection results and remove them.</p>
+
+<p><img alt="" src="../files/content/blogimg/flooorplan-recognition/machine-learning-for-document-recognitio---i6-min.jpg" style="width: 1140px; height: 500px;" /></p>
+
+<h3>Floor Plan Detection: Images</h3>
+
+<p>Some floor plans may include images, both colored and black and white, depicting the exterior of the building or its surroundings. Image recognition is one of the more popular and, as a consequence, more mature area of computer vision. Recognition of images highly depends on the object that needs to be located and categorized, so it makes sense to talk to machine learning developers first hand to see how your project can be brought into reality. Better yet is to get your AI idea validated first - not every idea can be implemented within a reasonable amount of time and within budget constraints.</p>
+
+<h2>Conclusion</h2>
+
+<p>Floor plan detection, like any other compute vision project, highly depends on the business need behind it. It can be as easy as detecting a small block of text or as complex as creating a fully automated bill of quantities by detecting and counting all objects present on a floor regardless of labels used. Any good project starts with idea exploration and validation to let you know if the idea you have in mind is even possible to implement.</p>
+
+<p>Other document types, like forms filled in by hand, contacts, PDF spreadsheets, and many more, may require different approaches to solving particular detection problems, but the general approach to digitizing any document will remain the same. It is always worth talking to a development team first to see how simple or how complex your project is and how much time and money it would require.</p>
+
+						</div>
+
+						
+							<div class="button-wrap-under-text mb-big">
+								
+									<a href="computer-vision-use-cases-anyone-can-implement-now-businessware-technologies.html"><span class="fa fa-angle-left"></span> Previous Post</a>
+								
+									<a href="facial-recognition-for-detecting-people-in-queues.html">Next Post <span class="fa fa-angle-right"></span></a>
+								
+							</div>
+						
+
+						<div class="post-tools small mb-big">
+							
+								<div class="item social-links">
+									
+	<div class="addthis_sharing_toolbox" style="margin-bottom:-5px;">
+		<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			<a class="a2a_button_facebook"></a>
+			<a class="a2a_button_twitter"></a>
+			<a class="a2a_button_email"></a>
+		</div>
+	</div>
+
+								</div>
+							
+						</div>
+
+						
+
+					</div>
+					<!-- /main-col -->
+
+					
+				</div>
+
+				    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-label="Login">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<form name="frmBlogLogin" method="post">
+	                <div class="modal-header">
+    	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	            <h4 class="modal-title">Login</h4>
+            	    </div>
+	                <div class="modal-body">
+						<div style="display:none;" class="form_status alert alert-danger mb"></div>
+						<div class="form-group mb embed-label">
+							<input title="Login" type="text" name="bu_login" class="form-control" />
+							<label>Login</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Password" type="password" name="bu_password" class="form-control" autocomplete="off"/>
+							<label>Password</label>
+						</div>
+            	    </div>
+	                <div class="modal-footer">
+    	                <button type="button" class="btn btn-transparent" data-dismiss="modal"><span>Close</span></button>
+        	            <button type="submit" class="btn btn-default"><span>Login</span></button>
+            	    </div>
+				</form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-label="Register">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<form name="frmBlogReg" method="post" enctype="multipart/form-data">
+	                <div class="modal-header">
+    	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	            <h4 class="modal-title">Register</h4>
+            	    </div>
+                	<div class="modal-body">
+						<div style="display:none;" class="form_status alert alert-danger mb"></div>
+
+                    	<div class="form-group mb embed-label">
+							<input title="Username" type="text" name="bu_login" class="form-control" />
+							<label>Username*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Password" type="password" name="bu_password" class="form-control" autocomplete="off" />
+							<label>Password*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="First Name" type="text" name="bu_first" class="form-control"/>
+							<label>First Name*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Last Name" type="text" name="bu_last" class="form-control" />
+							<label>Last Name*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Email" type="email" name="bu_email" class="form-control" />
+							<label>Email*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<label>Image (88x80)</label>
+							<div class="upload-control custom_upload_control"><input title="File Name" type="text" placeholder="No File Selected" class="form-control file-name upload_file_caption" DISABLED/><div class="upload_file_btn btn btn-default"><span>Select File</span><input title="File Upload" type="file" name="bu_avatar_image" /></div></div>
+						</div>
+        	        </div>
+	                <div class="modal-footer">
+    	                <button type="button" class="btn btn-transparent" data-dismiss="modal"><span>Close</span></button>
+        	            <button type="submit" class="btn btn-default"><span>Register</span></button>
+	                </div>
+				</form>
+            </div>
+        </div>
+    </div>
+
+			</div>
+		</section>
+
+		
+	<section class="content-section related-section">
+		<div class="container">
+		
+			<h3>You May Like</h3>
+			
+				<div class="related-projects-slider slider-type-blog">
+					
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/blog/items/cv-landing.jpg" alt="Computer vision use cases anyone can implement now" />
+							</div>
+							<div class="content-block">
+								<h6>Computer vision use cases anyone can implement now</h6>
+								<a href="computer-vision-use-cases-anyone-can-implement-now-businessware-technologies.html" class="more-link">Read More</a>
+							</div>
+							<a href="computer-vision-use-cases-anyone-can-implement-now-businessware-technologies.html" title="Computer vision use cases anyone can implement now" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/blog/items/mvp-landing-cardboard.jpg" alt="How to build an MVP mobile app: a 2020 guide to MVP app development" />
+							</div>
+							<div class="content-block">
+								<h6>How to build an MVP mobile app: a 2020 guide to MVP app development</h6>
+								<a href="how-to-build-a-minimum-viable-product.html" class="more-link">Read More</a>
+							</div>
+							<a href="how-to-build-a-minimum-viable-product.html" title="How to build an MVP mobile app: a 2020 guide to MVP app development" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/26/thumb/blog_firststepai-landing.png" alt="Machine Learning Model Training System" />
+							</div>
+							<div class="content-block">
+								<h6>Machine Learning Model Training System</h6>
+								<a href="../case-studies/machine-learning-model-training-system.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/machine-learning-model-training-system.html" title="Machine Learning Model Training System" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/20/thumb/blog_gtp-3-landing-min.jpg" alt="Marketing Content Generation System Using GPT-3" />
+							</div>
+							<div class="content-block">
+								<h6>Marketing Content Generation System Using GPT-3</h6>
+								<a href="../case-studies/marketing-content-generation-system-using-gpt-3.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/marketing-content-generation-system-using-gpt-3.html" title="Marketing Content Generation System Using GPT-3" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/17/thumb/blog_work-orders-landing.png" alt="PDF files recognition system for an architectural bureau" />
+							</div>
+							<div class="content-block">
+								<h6>PDF files recognition system for an architectural bureau</h6>
+								<a href="../case-studies/pdf-files-recognition-system-for-an-architectural-bureau-2.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/pdf-files-recognition-system-for-an-architectural-bureau-2.html" title="PDF files recognition system for an architectural bureau" class="area-link"></a>
+						</div>
+						
+				</div>
+			
+		</div>
+	</section>
+	
+
+	</section>
+
+
+	<script src="../web/assets/js/jquery.contentstable.js"></script>
+	<script>
+		$("#blog_main_content_wrap").tableOfContents("#tocList");
+		if ($("#tocList").find("li").length==0) $("#tocList").parents(".post-content").remove();
+	</script>
+
+	<link rel="stylesheet" href="../web/modules/blog/css/blog-module.css" type="text/css" />
+	<link rel="stylesheet" href="../web/modules/blog/css/blog-theme.css" type="text/css" />
+
+	<script src="../web/modules/blog/js/main.js"></script>
+
+	<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+	<script src="../web/modules/blog/js/jquery.autogrow-textarea.min.js"></script>
+	<script src="../web/modules/blog/js/post_details.js"></script>
+
+
+
+
+</section>
+<!-- /PAGE_BODY -->
+
+<footer id="footer" class="bg-dark overlay-color-pattern">
+	<div class="container">
+		<div class="row content-section">
+	<div class="col-sm-3 mb-big-xs">
+	<div class="footer-logo"><a  title="Home"  class=""  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a></div>
+	<h6 class="mb-half">Social Media</h6>
+	<div class="social-block">
+		<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+		<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+		<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+	</div>
+</div>
+
+<div class="col-sm-4 mb-big-xs">
+	<h5>US Office</h5>
+	<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+	<div class="phone-block"><a   class=""  href="mailto:sales@businesswaretech.com"><span class="fa fa-envelope"></span>sales@businesswaretech.com</a></div>
+</div>
+
+<div class="col-sm-5 mb-big-xs">
+	<h5>Site Menu</h5>
+	
+		<ul class="footer-menu">
+	<li><a href="../about-us.html">About us</a></li>
+	<li><a href="../case-studies.html">Case Studies</a></li>
+	<li><a href="../portfolio.html">Portfolio</a></li>
+	<li><a href="../blog.html">Blog</a></li>
+	<li><a href="../contact.html">Contact</a></li>
+	<li><a href="../privacy-policy.html">Privacy Policy</a></li>
+</ul>
+					
+	
+</div>
+
+
+</div>
+
+<div class="sep-white"></div>
+	<div class="footer-bottom-section">
+	<div class="small">&copy; BUSINESSWARE TECHNOLOGIES INC., 2003-2021. All rights reserved.</div>
+	
+</div>
+
+	
+	</div>
+</footer>
+
+	<script src="../web/assets/js/bootstrap.min.js"></script>
+
+	<!-- Twitter universal website tag code -->
+<!--script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o2ndw');
+twq('track','PageView');
+</script-->
+<!-- End Twitter universal website tag code -->
+
+
+</body>
+
+<!-- Mirrored from www.businesswaretech.com/blog/machine-learning-for-floor-plan-recognition by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:26:47 GMT -->
+</html>

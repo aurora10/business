@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.businesswaretech.com/case-studies/machine-learning-model-training-system by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:22:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-178399-12', 'auto');
+                ga('require', 'displayfeatures');
+		ga('send', 'pageview');
+
+	</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60879e0062662a09efc26df1/1f48s2d4p';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=fd6e5a82ee456' async='true'></script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59R9LPM');</script>
+<!-- End Google Tag Manager --><!-- Global site tag (gtag.js) - Google Ads: 1069634492 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1069634492"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1069634492');
+</script><!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '412789549591616');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=412789549591616&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code --><!-- DO NOT MODIFY -->
+<!-- Quora Pixel Code (JS Helper) -->
+<script>
+!function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+qp('init', '7a7c8894782e4b748998df62a8a793b8');
+qp('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/7a7c8894782e4b748998df62a8a793b8/pixel?tag=ViewContent&amp;noscript=1"/></noscript>
+<!-- End of Quora Pixel Code -->
+
+		<link rel="icon" type="image/ico" href="../files/settings/favicon.ico" />
+	
+
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<link rel="canonical" href="machine-learning-model-training-system.html" />
+
+	<script src="../web/assets/js/jquery.min.js"></script>
+
+    <link href="../web/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../web/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+	
+	   	<link href="../web/assets/js/sumoselect/sumoselect.min.css" rel="stylesheet" />
+    	<script src="../web/assets/js/sumoselect/jquery.sumoselect.min.js"></script>
+	
+
+	<link href="../web/assets/js/slick/slick.css" rel="stylesheet" />
+	<script src="../web/assets/js/slick/slick.min.js"></script>
+
+
+	<link href="../web/assets/css/fonts3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/theme3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/responsive3860.css?v=1" rel="stylesheet" />
+
+
+	
+
+
+	<script src="../web/assets/js/utils3860.js?v=1"></script>
+	<script src="../web/assets/js/main3860.js?v=1"></script>
+
+
+	
+
+	<style>
+		
+	</style>
+
+	
+</head>
+<body>
+    <a title="Scroll Up" aria-label="Scroll Up" class="affix-top" href="#top" id="scrollup" data-spy="affix" data-offset-top="101"><span class="fa fa-long-arrow-up"></span></a>
+
+
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59R9LPM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- PAGE_BODY -->
+<section id="page-wrap">
+	<header id="header">
+	<nav class="navbar">
+		<!-- navbar_header -->
+		<div id="navbar-header-wrap">
+			<div class="container">
+				<div class="navbar-header">
+					<a  title="Home"  class="navbar-brand "  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a>
+					<button id="mobile_nav_btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target-custom="#navigation">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars fa-lg"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- navbar_header -->
+
+		<!-- main_nav -->
+		<div class="collapse navbar-collapse" id="navigation">
+			<div id="top-nav" class="top-section">
+				<div class="container">
+					<div class="menu-search-form">
+	<form class="navbar-form" id="top-search" name="frmSearch" method="GET" action="https://www.businesswaretech.com/search-results">
+		<input name="sstr" type="text" placeholder="Search" title="Search" />
+		<button class="btn-toggle" type="button"><span class="fa fa-search"></span></button>
+		<button class="btn-close" type="button"><span class="fa fa-close"></span></button>
+	</form>
+</div>
+
+
+<script>
+	var $topmenuSearchApp = $(".menu-search-form");
+	var $searchControl = $("#top-search");
+	var $searchControlInput = $searchControl.find('input[name="sstr"]');
+
+	$searchControl.submit(function(e){
+		if ($searchControl.find('input[name="sstr"]').val()=="") {
+			e.preventDefault();
+		}
+	});
+
+	$searchControlInput.focusout(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.removeClass("expanded");
+		}
+	});
+
+	$topmenuSearchApp.find("#search-toggle-link, .btn-toggle").click(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.addClass("expanded");
+			$searchControlInput.focus();
+		} else {
+			$searchControl.first().submit();
+		}
+	});
+
+	$searchControl.find(".btn-close").click(function(){
+		$searchControl.removeClass("expanded");
+	});
+</script>
+					<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+					<div class="social-block">
+						<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+						<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+						<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+					</div>
+				</div>
+			</div>
+			<div id="main-nav">
+				<div class="container">
+					
+	<ul class="nav navbar-nav">
+		
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Services</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Tech Stack</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../frontend-development.html">Frontend</a></li>
+			
+				<li class=""><a  class="" href="../backend-development.html">Backend</a></li>
+			
+				<li class=""><a  class="" href="../mobile.html">Mobile</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Expertise</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../computer-vision.html">Computer vision</a></li>
+			
+				<li class=""><a  class="" href="../chat-apps.html">Chat apps</a></li>
+			
+				<li class=""><a  class="" href="../health-and-fitness-apps.html">Fitness apps</a></li>
+			
+				<li class=""><a  class="" href="../enterprise-portals.html">Enterprise portals</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Focus</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../ai-and-machine-learning.html">AI & Machine learning</a></li>
+			
+				<li class=""><a  class="" href="../architecture-and-cloud-engineering.html">Cloud engineering</a></li>
+			
+				<li class=""><a  class="" href="../mvp-and-startups.html">MVP & Startups</a></li>
+			
+				<li class=""><a  class="" href="../business-automation.html">Business automation</a></li>
+			
+					</ul>
+				</li>
+			
+					</ul>
+				</li>
+			
+				<li class=""><a  class="" href="../case-studies.html">Case Studies</a></li>
+			
+				<li class=""><a  class="" href="../portfolio.html">Portfolio</a></li>
+			
+				<li class=""><a  class="" href="../about-us.html">Company</a></li>
+			
+		<li class="menu-btn-item"><a   class=""  href="../contact.html">Contact</a></li>
+	</ul>
+	
+				</div>
+			</div>
+		</div>
+		<!-- main_nav -->
+
+	</nav>
+</header>
+
+
+
+
+	<section class="internal-header bg-red-gradient overlay-color-pattern color-white">
+	<div class="container">
+		<h1>Case Studies</h1>
+	</div>
+</section>
+
+
+	<section class="content-section project-info-section">
+		<div class="container">
+			
+				<div class="project-link-block mb">
+					<span class="fa fa-bookmark"></span>
+					
+						<a href="../case-studiesa380.html?search=1&amp;search_category=6">AI</a>
+						
+				</div>
+			
+			<h2 class="mb-big">Machine Learning Model Training System</h2>
+			<div class="project-details-info">
+				<div class="row">
+					<div class="col-sm-4 mb-big-xs">
+						<div class="project-details-listing">
+							
+								<div class="item mb">
+									<div><strong>Technologies:</strong></div>
+									<div>
+										
+											<a href="../case-studiesade0.html?search=1&amp;search_keywords=AWS">AWS</a>, 
+											<a href="../case-studiesac69.html?search=1&amp;search_keywords=Python">Python</a>, 
+											<a href="../case-studiesfa13.html?search=1&amp;search_keywords=JavaScript">JavaScript</a>, 
+											<a href="../case-studiesc0f2.html?search=1&amp;search_keywords=React">React</a>, 
+											<a href="../case-studiesbd40.html?search=1&amp;search_keywords=Node%2Ejs">Node.js</a>
+									</div>
+								</div>
+							
+								<div class="item mb">
+									<div><strong>Industry:</strong></div>
+									<div>Tech Innovation</div>
+								</div>
+							
+								<div class="item mb">
+									<div><strong>Client:</strong></div>
+									<div>First Step AI</div>
+								</div>
+							
+						</div>
+					</div>
+					<div class="col-sm-4 mb-big-xs">
+						<div class="project-details-listing">
+							
+								<div class="item mb">
+									<div><strong>Platform:</strong></div>
+									<div>Desktop</div>
+								</div>
+							
+						</div>
+					</div>
+					<div class="col-sm-4 mb-big-xs">
+						
+							<div class="case-short-info mb">
+								
+									<div class="item">
+										<div class="number"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+										<div class="text">Image Recognition and Classification</div>
+									</div>
+									
+									<div class="item">
+										<div class="number"><i class="fa fa-download" aria-hidden="true"></i></div>
+										<div class="text">Various Downloadable Model Formats</div>
+									</div>
+									
+							</div>
+						
+					</div>
+				 </div>
+			</div> 
+		</div>
+	</section>
+	
+		<section class="project-main-image-section">
+			<div class="bg"  style="background-color:#A3A7E7" ></div>
+			<div class="container"><img src="../files/casestudies/26/microsoftteams-image-(37).png" alt="Machine Learning Model Training System" /></div>
+		</section>
+	
+	<section class="content-section">
+		<div class="container">
+			
+				<div class="row mb-big">
+					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+						<h3>Project summary</h3>
+						<div class="textbox"><p>First Step AI is a startup looking to bring machine learning to the masses. The main goal of this project is to create a system that would be simple for the average user to train their own image recognition model, but complex enough to fit the needs of software developers and machine learning specialists. 
+
+We have developed a machine learning model training platform that allows users to create, train and test their own ML models. The platform consists of several modules which reflect the user's journey.</p></div>
+					</div>
+				</div>
+			
+				<div class="row mb-big">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="project-summary-info">
+							
+								<div class="item">
+									<h4 class="title h6-style"><strong>Services</strong></h4>
+									<div class="textbox small">Research and Developmen<br />
+AI Validation Service<br />
+MVP Development</div>
+								</div>
+							
+								<div class="item">
+									<h4 class="title h6-style"><strong>Team</strong></h4>
+									<div class="textbox small">2 Full-stack Developers<br />
+2 Data Scientists<br />
+UX Designer<br />
+Project Manager</div>
+								</div>
+							
+								<div class="item">
+									<h4 class="title h6-style"><strong>Target Audience</strong></h4>
+									<div class="textbox small">Software Development Teams<br />
+At-home ML Users</div>
+								</div>
+							
+						</div>
+					</div>
+				</div>
+			
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+					
+						<h3>Projects</h3>
+						<div class="textbox">
+							<p>All models trained using the platform exist in the form of projects - a collection of all relevant data, allowing for a quick overview of all user projects and their status.</p>
+
+<p><img alt="" src="../files/content/casestudiesimg/first-step-ai/microsoftteams-image-(34).png" /></p>
+
+						</div>
+						
+						<h3>Dataset</h3>
+						<div class="textbox">
+							<p>The platform allows users to add and annotate their own datasets by uploading images and marking them up. Before the markup starts, users can create labels that represent the objects which need to be detected to use for a markup later.</p>
+
+<p><img alt="" src="../files/content/casestudiesimg/first-step-ai/microsoftteams-image-(35).png"  /></p>
+
+<p>After the images are ready, the platform performs dataset analysis and provides relevant statistical information, like total image count, along with a balancing score that shows how good the dataset is in terms of objects distribution by classes. This makes it possible for the user to create a well-balanced data search for efficient machine learning model training. The more balanced the dataset is, the higher the mAP (mean average precision).</p>
+
+<p><img alt="" src="../files/content/casestudiesimg/first-step-ai/microsoftteams-image-(36).png" /></p>
+
+						</div>
+						
+						<h3>Image Recognition Model Training</h3>
+						<div class="textbox">
+							<p>After the dataset is complete, users can start training their own machine learning model. They can choose Tensorflow or PyTorch with various sets of base models and input sizes. For model training, we have used Amazon Sagemaker which allows for fast training and significant savings for the client as they only pay for effective training time. During the training process users are able to get real-time information on how their model is improving its detection accuracy.</p>
+<p>After the model has been trained, users can check on the final mAp and decide on whether it is high enough or if they want to improve it. When the latter is in case, users can go back to the dataset and add more images or increase its balancing score.</p>
+
+						</div>
+						
+						<h3>Model Testing And Download</h3>
+						<div class="textbox">
+							<p>If the users are happy with the mAp, they can test their models within our platform by uploading images and videos not included in the training dataset and seeing how well the model is able to detect the objects. Once the testing is complete, users can download the model in several formats depending on how it will be used:</p>
+
+<ul>
+	<li>APK - a ready-made Android mobile app with a user-trained model built-in</li>
+	<li>APK source code - ideal for mobile developers and integration into mobile apps</li>
+	<li>Various formats to install into different environments (servers, mobile phones, IoT or other edge devices) - TFLite (Quantized/Non-Quantized, Int8/Float16/Float32, Saved Model (.pb)) or YOLOv5 (.pt)</li>
+</ul>
+
+<p><img alt="" src="../files/content/casestudiesimg/first-step-ai/microsoftteams-image-(37).png"  /></p>
+
+						</div>
+						
+						<h3>Architecture And Tech Stack</h3>
+						<div class="textbox">
+							<p>The platform takes advantage of various Amazon services both for model training itself and the platform's own architecture. We have used AWS Amplify to implement serverless architecture which allows for fast development times as it eliminates the need for DevOps, saving client time and resources. Amazon Sagemaker is used for model training as it simplifies the need for dedicated environment orchestration.</p>
+<p>We have implemented a second-tier backend using Python to accommodate Sagemaker and any features the growing startup might need in the future.
+</p>
+						</div>
+						
+						<h3>Results</h3>
+						<div class="textbox">
+							<p>The platform is a simple to use and elegant solution to a high barrier of entry into machine learning development. While it is simple enough for the average user, it is also an invaluable tool for software development teams that need to implement machine learning into their projects but are not ready to hire machine learning developers.</p>
+
+<p>The platform is fully operational and is now in the soft launch stage. We continue system support and plan on introducing improvements and new features in the near future.</p>
+
+						</div>
+						
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="content-section related-section">
+		<div class="container">
+		
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+		
+			<h3>You May Like</h3>
+			
+				<div class="related-projects-slider slider-type-casestudy">
+					
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/blog/items/queue-landing.jpg" alt="Facial Recognition For Detecting People In Queues" />
+							</div>
+							<div class="content-block">
+								<h6>Facial Recognition For Detecting People In Queues</h6>
+								<a href="../blog/facial-recognition-for-detecting-people-in-queues.html" class="more-link">Read More</a>
+							</div>
+							<a href="../blog/facial-recognition-for-detecting-people-in-queues.html" title="Facial Recognition For Detecting People In Queues" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/blog/items/machine-learning-for-document-recognitio---landing-min.jpg" alt="Machine Learning  For Floor Plan Recognition" />
+							</div>
+							<div class="content-block">
+								<h6>Machine Learning  For Floor Plan Recognition</h6>
+								<a href="../blog/machine-learning-for-floor-plan-recognition.html" class="more-link">Read More</a>
+							</div>
+							<a href="../blog/machine-learning-for-floor-plan-recognition.html" title="Machine Learning  For Floor Plan Recognition" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/20/thumb/blog_gtp-3-landing-min.jpg" alt="Marketing Content Generation System Using GPT-3" />
+							</div>
+							<div class="content-block">
+								<h6>Marketing Content Generation System Using GPT-3</h6>
+								<a href="marketing-content-generation-system-using-gpt-3.html" class="more-link">Read More</a>
+							</div>
+							<a href="marketing-content-generation-system-using-gpt-3.html" title="Marketing Content Generation System Using GPT-3" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/17/thumb/blog_work-orders-landing.png" alt="PDF files recognition system for an architectural bureau" />
+							</div>
+							<div class="content-block">
+								<h6>PDF files recognition system for an architectural bureau</h6>
+								<a href="pdf-files-recognition-system-for-an-architectural-bureau-2.html" class="more-link">Read More</a>
+							</div>
+							<a href="pdf-files-recognition-system-for-an-architectural-bureau-2.html" title="PDF files recognition system for an architectural bureau" class="area-link"></a>
+						</div>
+						
+				</div>
+			
+				</div>
+			</div>
+		
+		</div>
+	</section>
+	
+
+<section class="bg-image-fixed overlay-color-pattern" style=" background-image:url(../files/user/bg-project-form.jpg); ">
+	<div class="overlay-color-dark content-section color-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 mb-big-sm">
+					<h2>Let's Work Together!</h2>
+					<div class="textbox h4-style"><p>Do you want to know the total cost of development and realization of the project? Tell us about your requirements, our specialists will contact you as soon as possible.</p>
+</div>
+				</div>
+				<div class="col-md-7">
+					<div class="white-form">
+						<link href="../web/assets/js/intltelinput/css/intltelinput.min.css" type="text/css" rel="stylesheet" />
+<script src="../web/assets/js/intltelinput/intltelinput-jquery.min.js"></script>
+
+<script src="../web/modules/quickcontactform/js/main3860.js?v=1"></script>
+
+<div id="quick-contact-app" class="form-wrap flex-form">
+	<a data-skip-hash="true" class="anchor-link" name="quick_contact_app_form"></a>
+
+	<form name="frmQuickContact" method="POST">
+		<div style="display:none;" class="form_status alert mb"></div>
+
+		<input type="hidden" name="phone_number" value=""/>
+		<input type="hidden" name="phone_extension" value=""/>
+		<input type="hidden" name="phone_valid" value=""/>
+
+		
+			<div class="row mb">
+				<div class="col-sm-6 mb-big-xs col-xs-12">
+					<div class="form-group mb embed-label">
+						<input id="fld_full_name" title="Full Name" name="full_name" class="form-control" type="text" />
+						<label for="fld_full_name">Name*</label>
+					</div>
+					<div class="form-group mb embed-label">
+						<input id="fld_email" title="Email Address" name="email" class="form-control" type="email" />
+						<label for="fld_email">Email*</label>
+					</div>
+					<div class="form-group mb embed-label">
+						<input id="fld_phone" title="Phone Number" name="phone" class="form-control" type="text" />
+						<label for="fld_phone">Phone</label>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12 stretch-block">
+					<div class="form-group mb embed-label textarea-block">
+						<textarea id="fld_comments" name="comments" title="Message" class="form-control"></textarea>
+						<label for="fld_comments">Message*</label>
+					</div>
+				</div>
+			</div>
+		
+
+		<div class="text-right">
+			<button class="btn btn-default frm_submit_btn" type="submit"><span>Submit</span></button>
+			<button style="display:none;" type="button" class="btn btn-default frm_loading_btn" onClick="javascript:void(0)"><span>Processing</span><span class="fa fa-spinner fa-spin"></span></button>
+		</div>
+
+	</form>
+</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+</section>
+<!-- /PAGE_BODY -->
+
+<footer id="footer" class="bg-dark overlay-color-pattern">
+	<div class="container">
+		<div class="row content-section">
+	<div class="col-sm-3 mb-big-xs">
+	<div class="footer-logo"><a  title="Home"  class=""  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a></div>
+	<h6 class="mb-half">Social Media</h6>
+	<div class="social-block">
+		<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+		<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+		<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+	</div>
+</div>
+
+<div class="col-sm-4 mb-big-xs">
+	<h5>US Office</h5>
+	<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+	<div class="phone-block"><a   class=""  href="mailto:sales@businesswaretech.com"><span class="fa fa-envelope"></span>sales@businesswaretech.com</a></div>
+</div>
+
+<div class="col-sm-5 mb-big-xs">
+	<h5>Site Menu</h5>
+	
+		<ul class="footer-menu">
+	<li><a href="../about-us.html">About us</a></li>
+	<li><a href="../case-studies.html">Case Studies</a></li>
+	<li><a href="../portfolio.html">Portfolio</a></li>
+	<li><a href="../blog.html">Blog</a></li>
+	<li><a href="../contact.html">Contact</a></li>
+	<li><a href="../privacy-policy.html">Privacy Policy</a></li>
+</ul>
+					
+	
+</div>
+
+
+</div>
+
+<div class="sep-white"></div>
+	<div class="footer-bottom-section">
+	<div class="small">&copy; BUSINESSWARE TECHNOLOGIES INC., 2003-2021. All rights reserved.</div>
+	
+</div>
+
+	
+	</div>
+</footer>
+
+	<script src="../web/assets/js/bootstrap.min.js"></script>
+
+	<!-- Twitter universal website tag code -->
+<!--script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o2ndw');
+twq('track','PageView');
+</script-->
+<!-- End Twitter universal website tag code -->
+
+
+</body>
+
+<!-- Mirrored from www.businesswaretech.com/case-studies/machine-learning-model-training-system by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:23:02 GMT -->
+</html>

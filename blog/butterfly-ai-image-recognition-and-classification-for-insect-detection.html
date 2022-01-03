@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.businesswaretech.com/blog/butterfly-ai-image-recognition-and-classification-for-insect-detection by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:26:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-178399-12', 'auto');
+                ga('require', 'displayfeatures');
+		ga('send', 'pageview');
+
+	</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60879e0062662a09efc26df1/1f48s2d4p';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=fd6e5a82ee456' async='true'></script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59R9LPM');</script>
+<!-- End Google Tag Manager --><!-- Global site tag (gtag.js) - Google Ads: 1069634492 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1069634492"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1069634492');
+</script><!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '412789549591616');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=412789549591616&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code --><!-- DO NOT MODIFY -->
+<!-- Quora Pixel Code (JS Helper) -->
+<script>
+!function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+qp('init', '7a7c8894782e4b748998df62a8a793b8');
+qp('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/7a7c8894782e4b748998df62a8a793b8/pixel?tag=ViewContent&amp;noscript=1"/></noscript>
+<!-- End of Quora Pixel Code -->
+
+		<link rel="icon" type="image/ico" href="../files/settings/favicon.ico" />
+	
+
+	<title>Butterfly AI - Image Recognition And Classification For Insect Detection | Businessware Technologies</title>
+	<meta name="keywords" content="machine learning, computer vision, image recognition, image classification, computer vision services, computer vision custom development services" />
+	<meta name="description" content="Neural networks are used for many different tasks, but have you ever heard of a butterfly recognition AI? We neither, so the opportunity to work on this project" />
+
+	<link rel="canonical" href="butterfly-ai-image-recognition-and-classification-for-insect-detection.html" />
+
+	<script src="../web/assets/js/jquery.min.js"></script>
+
+    <link href="../web/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../web/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+	
+	   	<link href="../web/assets/js/sumoselect/sumoselect.min.css" rel="stylesheet" />
+    	<script src="../web/assets/js/sumoselect/jquery.sumoselect.min.js"></script>
+	
+
+	<link href="../web/assets/js/slick/slick.css" rel="stylesheet" />
+	<script src="../web/assets/js/slick/slick.min.js"></script>
+
+
+	<link href="../web/assets/css/fonts3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/theme3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/responsive3860.css?v=1" rel="stylesheet" />
+
+
+	
+
+
+	<script src="../web/assets/js/utils3860.js?v=1"></script>
+	<script src="../web/assets/js/main3860.js?v=1"></script>
+
+
+	
+
+	<style>
+		
+	</style>
+
+	
+</head>
+<body>
+    <a title="Scroll Up" aria-label="Scroll Up" class="affix-top" href="#top" id="scrollup" data-spy="affix" data-offset-top="101"><span class="fa fa-long-arrow-up"></span></a>
+
+
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59R9LPM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- PAGE_BODY -->
+<section id="page-wrap">
+	<header id="header">
+	<nav class="navbar">
+		<!-- navbar_header -->
+		<div id="navbar-header-wrap">
+			<div class="container">
+				<div class="navbar-header">
+					<a  title="Home"  class="navbar-brand "  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a>
+					<button id="mobile_nav_btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target-custom="#navigation">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars fa-lg"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- navbar_header -->
+
+		<!-- main_nav -->
+		<div class="collapse navbar-collapse" id="navigation">
+			<div id="top-nav" class="top-section">
+				<div class="container">
+					<div class="menu-search-form">
+	<form class="navbar-form" id="top-search" name="frmSearch" method="GET" action="https://www.businesswaretech.com/search-results">
+		<input name="sstr" type="text" placeholder="Search" title="Search" />
+		<button class="btn-toggle" type="button"><span class="fa fa-search"></span></button>
+		<button class="btn-close" type="button"><span class="fa fa-close"></span></button>
+	</form>
+</div>
+
+
+<script>
+	var $topmenuSearchApp = $(".menu-search-form");
+	var $searchControl = $("#top-search");
+	var $searchControlInput = $searchControl.find('input[name="sstr"]');
+
+	$searchControl.submit(function(e){
+		if ($searchControl.find('input[name="sstr"]').val()=="") {
+			e.preventDefault();
+		}
+	});
+
+	$searchControlInput.focusout(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.removeClass("expanded");
+		}
+	});
+
+	$topmenuSearchApp.find("#search-toggle-link, .btn-toggle").click(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.addClass("expanded");
+			$searchControlInput.focus();
+		} else {
+			$searchControl.first().submit();
+		}
+	});
+
+	$searchControl.find(".btn-close").click(function(){
+		$searchControl.removeClass("expanded");
+	});
+</script>
+					<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+					<div class="social-block">
+						<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+						<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+						<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+					</div>
+				</div>
+			</div>
+			<div id="main-nav">
+				<div class="container">
+					
+	<ul class="nav navbar-nav">
+		
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Services</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Tech Stack</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../frontend-development.html">Frontend</a></li>
+			
+				<li class=""><a  class="" href="../backend-development.html">Backend</a></li>
+			
+				<li class=""><a  class="" href="../mobile.html">Mobile</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Expertise</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../computer-vision.html">Computer vision</a></li>
+			
+				<li class=""><a  class="" href="../chat-apps.html">Chat apps</a></li>
+			
+				<li class=""><a  class="" href="../health-and-fitness-apps.html">Fitness apps</a></li>
+			
+				<li class=""><a  class="" href="../enterprise-portals.html">Enterprise portals</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Focus</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../ai-and-machine-learning.html">AI & Machine learning</a></li>
+			
+				<li class=""><a  class="" href="../architecture-and-cloud-engineering.html">Cloud engineering</a></li>
+			
+				<li class=""><a  class="" href="../mvp-and-startups.html">MVP & Startups</a></li>
+			
+				<li class=""><a  class="" href="../business-automation.html">Business automation</a></li>
+			
+					</ul>
+				</li>
+			
+					</ul>
+				</li>
+			
+				<li class=""><a  class="" href="../case-studies.html">Case Studies</a></li>
+			
+				<li class=""><a  class="" href="../portfolio.html">Portfolio</a></li>
+			
+				<li class=""><a  class="" href="../about-us.html">Company</a></li>
+			
+		<li class="menu-btn-item"><a   class=""  href="../contact.html">Contact</a></li>
+	</ul>
+	
+				</div>
+			</div>
+		</div>
+		<!-- main_nav -->
+
+	</nav>
+</header>
+
+
+
+
+	<section class="internal-header bg-red-gradient overlay-color-pattern color-white">
+	<div class="container">
+		<h1>Blog</h1>
+	</div>
+</section>
+
+
+	<section id="blog-module-wrap">
+		<section id="blog-post" class="content-section">
+			<div class="container">
+				<div class="blog-post-header mb mb-big-xs">
+					<div class="header-wrap">
+						<h1>Butterfly AI - Image Recognition And Classification For Insect Detection</h1>
+						<div class="textbox mb-half">
+							<div class="post-date small">
+								<span>December 9, 2021</span>
+								
+							</div>
+						</div>
+						<div class="post-tools small">
+							
+								<div class="item social-links">
+									
+	<div class="addthis_sharing_toolbox" style="margin-bottom:-5px;">
+		<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			<a class="a2a_button_facebook"></a>
+			<a class="a2a_button_twitter"></a>
+			<a class="a2a_button_email"></a>
+		</div>
+	</div>
+
+								</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<!-- main-col -->
+					
+					<div class="col-md-12">
+					 
+							<div class="textbox">
+								<img alt="Butterfly AI - Image Recognition And Classification For Insect Detection" src="../files/blog/items/butterflies%3dmain.jpg" />
+							</div>
+						
+
+						<div class="post-content mb-big">
+							<h2>Contents</h2>
+							<div class="textbox">
+								<ol id="tocList"></ol>
+							</div>
+						</div>
+
+						<div id="blog_main_content_wrap" class="textbox mb">
+							<p>Neural networks are used for many different tasks, but have you ever heard of a butterfly recognition AI? We neither, so the opportunity to work on this project was very exciting, and it was an interesting ride.</p>
+
+<p>Butterflies have had millions of years of evolution to blend in perfectly with their environment to avoid predators and, in this case, insect enthusiasts, making it harder for them to admire wildlife. While observing butterflies in real life can be problematic, monitoring them through a video camera from the comfort of your home is a lovely way to enjoy our winged friends, especially if AI removes the need for looking through hours of video footage and sends you alerts when a butterfly has entered the camera&rsquo;s view, automatically detecting what butterfly species it is.</p>
+
+<p>There are two parts to the butterfly AI:</p>
+
+<ul>
+	<li>object detection - a neural network in charge of detecting the presence of a butterfly or a different insect</li>
+	<li>object classification - a neural network in charge of determining which butterfly or insect species was captured</li>
+</ul>
+
+<p>When the object is detected, the system records a short video, which can then be accessed by the end-user, and takes a snapshot to send to a server where a classification model detects what type of butterfly or an insect decided to bless the user with its presence.</p>
+
+<h2>Low-quality Cameras For Object Detection</h2>
+
+<p>To start with, our project had to work using any webcam. This is where we ran into the first problem: low-quality cameras, as they are the most affordable and the most widespread. While the &lsquo;no camera limit&rsquo; is great for end-users, it presented a challenge for us, as the object detection model runs using the camera chipset.</p>
+
+<p>Where someone gets a good deal, others get the short end of the stick, in this case &lsquo;others&rsquo; being our CV developers. Working with a cheap camera means working with a cheap chipset which makes it impossible to use the default neural network architecture. Compared to a top-of-the-line, gold standard of computer vision video cameras - NVIDIA Jetson Nano - which allows using around 120 layers of default YOLO v4, the cameras we had to work with allowed only for 22 layers.</p>
+
+<p>Where a full YOLO v4 neural network provides great recognition results, a stripped-down version performs poorly. We have tested both and were unpleasantly surprised with how low the model depth was when running it using a cheap chipset.</p>
+
+<h2>Testing Default YOLO v4 vs Reduced</h2>
+
+<p>We started with training the default YOLO v4 model and testing it on the customer&rsquo;s dataset The results we achieved were satisfactory - 95% mAp, which in the world of computer vision is more than enough to launch a mode into production.</p>
+
+<p>After retraining the model to fit the camera&rsquo;s parameters, the detection quality dropped significantly. But where machines fail humans advance.</p>
+
+<p>We have tested the neural network on test data and visually evaluated False Positives and False Negatives. This highlighted where the network lacked knowledge and where it made the most mistakes.</p>
+
+<h2>Buggin&#39; Out: False Positives</h2>
+
+<p>Networks are like children - they struggle a lot until you explain how something is done, and our cybernetic child struggled with determining if a butterfly, or a human&#39;s hand, has entered the camera&#39;s view. While the whole &#39;networks are like children&#39; analogy is cute, the end-user is more interested in looking at butterflies than their neighbors&#39; hands, so we had to work on teaching the network to ignore people and focus on insects instead.</p>
+
+<p>To do this, we have added negative examples, like pictures of people at various angles as well as human hands.&nbsp;</p>
+
+<p align="center"><img alt="" src="../files/content/blogimg/butterfly-ai/butterflies-1.png" style="width: 600px; height: 432px;" /></p>
+
+<h2>Like Moths To Flames: Object Detection At Night</h2>
+
+<p>Butterfliews are pretty and all, but have you seen how pretty moths can be? Moths are nocturnal and only show up at nighttime, which posed an additional challenge of making the system work at night as accurately as it does during the day. During the daytime, cameras produce full-color images, and at night they produce black and white images using infrared mode. When the camera switched to infrared, the model produced a lot of false positives:</p>
+
+<ul>
+	<li>tree leaves moving in the wind</li>
+	<li>dust and other debree floating in the air</li>
+	<li>fountains</li>
+</ul>
+
+<p>Users would be less than happy to be woken up by a notification, get excited to look at a rare moth or a beetle, but end up looking at a recording of a leaf stuck to a camera lens.</p>
+
+<p align="center"><img alt="" src="../files/content/blogimg/butterfly-ai/butterflies-2.png" style="width: 600px; height: 432px;" /></p>
+
+<p>In order to reduce sleep interruptions to a minimum, we collected instances of false positives in nighttime settings and marked them up by hand.</p>
+
+<h2>Instagram vs Reality: On The Importance of A Dataset</h2>
+
+<p>Ever heard of social media being called a &lsquo;highlight reel&rsquo; where people present the best version of themselves? Who knew the same can be true for insects. Photos of butterflies, moths and other insects that can be obtained from open sources, like Google Images and Youtube videos, are usually high quality, very sharp, and depict specimens at their best, with nothing in between the insect and the camera obstructing the view.</p>
+
+<p>Reality is not always as pretty. Cameras produce low-quality images that can make it hard to understand what&rsquo;s going on even for a human eye, bad weather conditions like rain, snow, or dust can obstruct the view, and we are sure butterflies sense when someone wants to capture them and position themselves in the most ridiculous way possible.</p>
+
+<p align="center"><img alt="" src="../files/content/blogimg/butterfly-ai/butterflies-3.png" style="width: 600px; height: 432px;" /></p>
+
+<p>The dataset that our client has provided (consisting of shart images found on the Internet) was not of very much use for this project. We needed to collect a set of images of butterflies in real conditions using the client&rsquo;s cameras to show the model what butterflies really look like, and not how they are presented on social media.</p>
+
+<h3>What We Have Now</h3>
+
+<p>So, after doing all of the above:</p>
+
+<ul>
+	<li>manually going through every instance where the network was wrong</li>
+	<li>teaching the network to ignore people and not detect them as insects</li>
+	<li>working with black and white images and false positives</li>
+	<li>collecting a dataset of butterflies in real-life conditions, under various angles, and in different weather conditions</li>
+</ul>
+
+<p>We have managed to achieve a <strong>97,5% mAP</strong> for object detection. This is a very high result for a computer vision model as the unwritten rule for any CV model going into production is to have over 94% mAP.</p>
+
+<p align="center"><img alt="" src="../files/content/blogimg/butterfly-ai/microsoftteams-image-(52).png" style="width: 600px; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Achieving Perfection: Object Detection Stats&lt;/h2&gt;
+
+&lt;p&gt;While the results we have achieved now are more than enough to be used in the final product, there's still room for improvement.&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;the network mistakes flowers for butterflies&lt;/li&gt;
+	&lt;li&gt;butterflies with their wings closed still present a challenge&lt;/li&gt;
+	&lt;li&gt;insects partially covered by random objects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;insects close to the camera &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After enough images for each group are collected, we expect the mAP to increase and reach 98,5%.&lt;/p&gt;
+
+&lt;h3&gt;Image Classification Model&lt;/h3&gt;
+
+&lt;p&gt;The next step in getting to know your winged visitors is to pass the image with a butterfly to an object classification model. Its goal is to recognize the butterfly species. As some butterfly species live exclusively on certain continents, we have decided to create two models - one for those who live in North America, and one for those in Europe.&lt;/p&gt;
+
+&lt;h3&gt;A Note About Working With Legacy Code&lt;/h3&gt;
+
+&lt;p&gt;We didn't start working on this project from scratch. The project was already in the development stage when we got to work on it. Due to time constraints, we had to pick up where the project was left off instead of starting from scratch - researching the best neural network for the task of object classification, designing the system architecture, performing tests before diving headfirst into development.&lt;/p&gt;
+
+&lt;p&gt;Working with someone else's code under tight deadlines means making compromises. For us, this was working with YOLO v4 for object classification. YOLO is excellent at object detection tasks, but it's not an optimal choice for the task of object classification. We had to make the best out of what we had.&lt;/p&gt;
+
+&lt;p&gt;We are working on creating an object classification system from scratch using Torch framework, at the present moment the system is based on YOLO v4 and detects butterfly species decently well.&lt;/p&gt;
+
+&lt;p&gt;Now that's that is out of the way...&lt;/p&gt;
+
+&lt;h2&gt;One Step At A Time: A Lesson In Multistage Neural Networks&lt;/h2&gt;
+
+&lt;p&gt;Initially, the problem of object classification was solved using a 'head-on' approach: the network was shown photos of all the different butterfly species, both males and females, from which it tried to learn what they look like and how they differ from each other. This resulted in very poor accuracy scores - in other words, the network made a whole lot of mistakes when identifying insect species.&lt;/p&gt;
+
+&lt;p&gt;The network was trying to learn too many aspects at the same time. Many butterfly species look very similar to each other and differ from one another by a small patch of pigment on their wings, a slightly different hue, or a small difference in antennae. Retaining all of this information, along with what different sexes of the same species look like, is too difficult under given circumstances. The network would often mix up butterfly species while determining the more broad butterfly type correctly.&lt;/p&gt;
+
+&lt;p&gt;For example, the difference between a monarch butterfly and a viceroy (both of which belong to a Nymphalidae butterfly family) is a thin black line on their lower wings.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=" /></p>
+
+<p>The network would label a &#39;viceroy (Nymphalidae)&#39; as a &#39;monarch (Nymphalidae)&#39;, producing a wrong result, but being generally correct in the family name. For the sake of time, we decided it was more important to detect the overall butterfly family rather than its particular species, so that&rsquo;s where we started.</p>
+
+<p>After model evaluation, we have decided to implement a multistage approach:</p>
+
+<ul>
+	<li>the network would first determine the overall butterfly family - butterflies from the same family look similar to each other and significantly different from butterflies from other families, making it an easy first step in buttefly classification</li>
+	<li>the second step is to detect which species it is</li>
+	<li>the last would be to determine if the butterfly is male or female</li>
+</ul>
+
+<h2>Practise Makes Perfect: On The Importance Of A Dataset (Again)</h2>
+
+<p>When you come across a new concept, you read books or watch educational videos to grasp it. If you fail, you ask your friend to explain it to you or you visit a seminar on the topic. In other words, you try to accumulate more information about it to understand it better.</p>
+
+<p>The same goes for neural networks - the better you need one to understand what a monarch butterfly looks like, the more images of monarchs you need to show it. The more data it has looked at, the better accuracy scores will be.</p>
+
+<p>The multistage approach we&rsquo;ve chosen not only improved the accuracy of the object classification model but also made it possible to analyze the dataset and determine where the network lacked learning data.</p>
+
+<p>For example, a Pieris rapae, or a cabbage butterfly, differs from a Pieris napi, or a green-veined white butterfly, by an extra set of brown dots on its wings. The network would often mix these butterflies up, meaning they looked very similar to the network. We needed to collect more photos of both butterfly species in order to teach the network the difference between them.</p>
+
+<p align="center"><img alt="" src="../files/content/blogimg/butterfly-ai/butterflies-5.png" style="width: 600px; height: 432px;" /></p>
+
+<h2>Teamwork Makes The Network Work: Real Time Training</h2>
+
+<p>Insect enthusiasts are a passionate bunch - they know how to identify a butterfly by the shape of its single wing. They possess knowledge that our classification network dreams of having, so why not bring the two together and form a butterfly-loving alliance the world has never seen before?</p>
+
+<p>Currently, the classification network doesn&rsquo;t just tell the user the butterfly species, it shows the degree of confidence along with other guesses.</p>
+
+<p>The user can confirm the network&rsquo;s guess or correct it, thus helping us train it - one butterfly at a time. After running the user feedback system for 3 months, we have collected over 20 thousand images. This data is invaluable to us since the photos are made in real-life conditions (bad weather conditions, at night, etc.) and are marked up by experts.</p>
+
+<p align="center"><img alt="" src="../files/content/blogimg/butterfly-ai/microsoftteams-image-(56).png" style="width: 600px; " /></p>
+
+<h3>If You Stare Into The Abyss For Long, The Abyss Gives You Butterflies</h3>
+
+<p>It is worth noting that during this project, we have become butterfly experts ourselves. Looking at insect photos all day long, while essentially educating a virtual child on all the little differences between different wing types, makes one an instant member of the insect enthusiast community. If all else fails, our CV team members can easily find themselves in lepidopterology.</p>
+
+<p>On a serious note, looking through thousands of images of butterflies, be it for dataset markup or analyzing where the network makes the most mistakes, we have delved deep into this project and came out the other end not only with a bunch of butterfly knowledge but a better understanding of how complex image recognition and classification systems work, how to best implement them, how to analyze a large dataset and find its weak points. This project was invaluable for us as an opportunity to research and work with the latest computer vision technologies, work with real-time customer feedback, and it polished our problem-solving skills when working with outdated code.</p>
+
+<p>We continue working on the butterfly AI and will share updates very soon!</p>
+
+						</div>
+
+						
+							<div class="button-wrap-under-text mb-big">
+								
+									<a href="facial-recognition-for-detecting-people-in-queues.html"><span class="fa fa-angle-left"></span> Previous Post</a>
+								
+							</div>
+						
+
+						<div class="post-tools small mb-big">
+							
+								<div class="item social-links">
+									
+	<div class="addthis_sharing_toolbox" style="margin-bottom:-5px;">
+		<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			<a class="a2a_button_facebook"></a>
+			<a class="a2a_button_twitter"></a>
+			<a class="a2a_button_email"></a>
+		</div>
+	</div>
+
+								</div>
+							
+						</div>
+
+						
+
+					</div>
+					<!-- /main-col -->
+
+					
+				</div>
+
+				    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-label="Login">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<form name="frmBlogLogin" method="post">
+	                <div class="modal-header">
+    	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	            <h4 class="modal-title">Login</h4>
+            	    </div>
+	                <div class="modal-body">
+						<div style="display:none;" class="form_status alert alert-danger mb"></div>
+						<div class="form-group mb embed-label">
+							<input title="Login" type="text" name="bu_login" class="form-control" />
+							<label>Login</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Password" type="password" name="bu_password" class="form-control" autocomplete="off"/>
+							<label>Password</label>
+						</div>
+            	    </div>
+	                <div class="modal-footer">
+    	                <button type="button" class="btn btn-transparent" data-dismiss="modal"><span>Close</span></button>
+        	            <button type="submit" class="btn btn-default"><span>Login</span></button>
+            	    </div>
+				</form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-label="Register">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<form name="frmBlogReg" method="post" enctype="multipart/form-data">
+	                <div class="modal-header">
+    	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	            <h4 class="modal-title">Register</h4>
+            	    </div>
+                	<div class="modal-body">
+						<div style="display:none;" class="form_status alert alert-danger mb"></div>
+
+                    	<div class="form-group mb embed-label">
+							<input title="Username" type="text" name="bu_login" class="form-control" />
+							<label>Username*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Password" type="password" name="bu_password" class="form-control" autocomplete="off" />
+							<label>Password*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="First Name" type="text" name="bu_first" class="form-control"/>
+							<label>First Name*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Last Name" type="text" name="bu_last" class="form-control" />
+							<label>Last Name*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Email" type="email" name="bu_email" class="form-control" />
+							<label>Email*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<label>Image (88x80)</label>
+							<div class="upload-control custom_upload_control"><input title="File Name" type="text" placeholder="No File Selected" class="form-control file-name upload_file_caption" DISABLED/><div class="upload_file_btn btn btn-default"><span>Select File</span><input title="File Upload" type="file" name="bu_avatar_image" /></div></div>
+						</div>
+        	        </div>
+	                <div class="modal-footer">
+    	                <button type="button" class="btn btn-transparent" data-dismiss="modal"><span>Close</span></button>
+        	            <button type="submit" class="btn btn-default"><span>Register</span></button>
+	                </div>
+				</form>
+            </div>
+        </div>
+    </div>
+
+			</div>
+		</section>
+
+		
+	<section class="content-section related-section">
+		<div class="container">
+		
+			<h3>You May Like</h3>
+			
+				<div class="related-projects-slider slider-type-blog">
+					
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/21/thumb/blog_landing-min.jpg" alt="AI-powered Digital Media Recommendation System" />
+							</div>
+							<div class="content-block">
+								<h6>AI-powered Digital Media Recommendation System</h6>
+								<a href="../case-studies/ai-powered-digital-media-recommendation-system.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/ai-powered-digital-media-recommendation-system.html" title="AI-powered Digital Media Recommendation System" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/blog/items/cv-landing.jpg" alt="Computer vision use cases anyone can implement now" />
+							</div>
+							<div class="content-block">
+								<h6>Computer vision use cases anyone can implement now</h6>
+								<a href="computer-vision-use-cases-anyone-can-implement-now-businessware-technologies.html" class="more-link">Read More</a>
+							</div>
+							<a href="computer-vision-use-cases-anyone-can-implement-now-businessware-technologies.html" title="Computer vision use cases anyone can implement now" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/20/thumb/blog_gtp-3-landing-min.jpg" alt="Marketing Content Generation System Using GPT-3" />
+							</div>
+							<div class="content-block">
+								<h6>Marketing Content Generation System Using GPT-3</h6>
+								<a href="../case-studies/marketing-content-generation-system-using-gpt-3.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/marketing-content-generation-system-using-gpt-3.html" title="Marketing Content Generation System Using GPT-3" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/17/thumb/blog_work-orders-landing.png" alt="PDF files recognition system for an architectural bureau" />
+							</div>
+							<div class="content-block">
+								<h6>PDF files recognition system for an architectural bureau</h6>
+								<a href="../case-studies/pdf-files-recognition-system-for-an-architectural-bureau-2.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/pdf-files-recognition-system-for-an-architectural-bureau-2.html" title="PDF files recognition system for an architectural bureau" class="area-link"></a>
+						</div>
+						
+				</div>
+			
+		</div>
+	</section>
+	
+
+	</section>
+
+
+	<script src="../web/assets/js/jquery.contentstable.js"></script>
+	<script>
+		$("#blog_main_content_wrap").tableOfContents("#tocList");
+		if ($("#tocList").find("li").length==0) $("#tocList").parents(".post-content").remove();
+	</script>
+
+	<link rel="stylesheet" href="../web/modules/blog/css/blog-module.css" type="text/css" />
+	<link rel="stylesheet" href="../web/modules/blog/css/blog-theme.css" type="text/css" />
+
+	<script src="../web/modules/blog/js/main.js"></script>
+
+	<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+	<script src="../web/modules/blog/js/jquery.autogrow-textarea.min.js"></script>
+	<script src="../web/modules/blog/js/post_details.js"></script>
+
+
+
+
+</section>
+<!-- /PAGE_BODY -->
+
+<footer id="footer" class="bg-dark overlay-color-pattern">
+	<div class="container">
+		<div class="row content-section">
+	<div class="col-sm-3 mb-big-xs">
+	<div class="footer-logo"><a  title="Home"  class=""  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a></div>
+	<h6 class="mb-half">Social Media</h6>
+	<div class="social-block">
+		<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+		<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+		<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+	</div>
+</div>
+
+<div class="col-sm-4 mb-big-xs">
+	<h5>US Office</h5>
+	<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+	<div class="phone-block"><a   class=""  href="mailto:sales@businesswaretech.com"><span class="fa fa-envelope"></span>sales@businesswaretech.com</a></div>
+</div>
+
+<div class="col-sm-5 mb-big-xs">
+	<h5>Site Menu</h5>
+	
+		<ul class="footer-menu">
+	<li><a href="../about-us.html">About us</a></li>
+	<li><a href="../case-studies.html">Case Studies</a></li>
+	<li><a href="../portfolio.html">Portfolio</a></li>
+	<li><a href="../blog.html">Blog</a></li>
+	<li><a href="../contact.html">Contact</a></li>
+	<li><a href="../privacy-policy.html">Privacy Policy</a></li>
+</ul>
+					
+	
+</div>
+
+
+</div>
+
+<div class="sep-white"></div>
+	<div class="footer-bottom-section">
+	<div class="small">&copy; BUSINESSWARE TECHNOLOGIES INC., 2003-2021. All rights reserved.</div>
+	
+</div>
+
+	
+	</div>
+</footer>
+
+	<script src="../web/assets/js/bootstrap.min.js"></script>
+
+	<!-- Twitter universal website tag code -->
+<!--script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o2ndw');
+twq('track','PageView');
+</script-->
+<!-- End Twitter universal website tag code -->
+
+
+</body>
+
+<!-- Mirrored from www.businesswaretech.com/blog/butterfly-ai-image-recognition-and-classification-for-insect-detection by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:26:18 GMT -->
+</html>

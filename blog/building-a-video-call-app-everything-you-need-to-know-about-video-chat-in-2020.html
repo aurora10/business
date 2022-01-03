@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.businesswaretech.com/blog/building-a-video-call-app-everything-you-need-to-know-about-video-chat-in-2020 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:30:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-178399-12', 'auto');
+                ga('require', 'displayfeatures');
+		ga('send', 'pageview');
+
+	</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60879e0062662a09efc26df1/1f48s2d4p';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=fd6e5a82ee456' async='true'></script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59R9LPM');</script>
+<!-- End Google Tag Manager --><!-- Global site tag (gtag.js) - Google Ads: 1069634492 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1069634492"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1069634492');
+</script><!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '412789549591616');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=412789549591616&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code --><!-- DO NOT MODIFY -->
+<!-- Quora Pixel Code (JS Helper) -->
+<script>
+!function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+qp('init', '7a7c8894782e4b748998df62a8a793b8');
+qp('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/7a7c8894782e4b748998df62a8a793b8/pixel?tag=ViewContent&amp;noscript=1"/></noscript>
+<!-- End of Quora Pixel Code -->
+
+		<link rel="icon" type="image/ico" href="../files/settings/favicon.ico" />
+	
+
+	<title>Building a Video Call App: Everything You Need To Know About Video Chat in 2020 | Businessware Technologies</title>
+	<meta name="keywords" content="video chat, video call app" />
+	<meta name="description" content="Are you about to launch your video conferencing app? This deep-dive guide explains how to build a video calling application and everything in-between." />
+
+	<link rel="canonical" href="building-a-video-call-app-everything-you-need-to-know-about-video-chat-in-2020.html" />
+
+	<script src="../web/assets/js/jquery.min.js"></script>
+
+    <link href="../web/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../web/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+	
+	   	<link href="../web/assets/js/sumoselect/sumoselect.min.css" rel="stylesheet" />
+    	<script src="../web/assets/js/sumoselect/jquery.sumoselect.min.js"></script>
+	
+
+	<link href="../web/assets/js/slick/slick.css" rel="stylesheet" />
+	<script src="../web/assets/js/slick/slick.min.js"></script>
+
+
+	<link href="../web/assets/css/fonts3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/theme3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/responsive3860.css?v=1" rel="stylesheet" />
+
+
+	
+
+
+	<script src="../web/assets/js/utils3860.js?v=1"></script>
+	<script src="../web/assets/js/main3860.js?v=1"></script>
+
+
+	
+
+	<style>
+		
+	</style>
+
+	
+</head>
+<body>
+    <a title="Scroll Up" aria-label="Scroll Up" class="affix-top" href="#top" id="scrollup" data-spy="affix" data-offset-top="101"><span class="fa fa-long-arrow-up"></span></a>
+
+
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59R9LPM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- PAGE_BODY -->
+<section id="page-wrap">
+	<header id="header">
+	<nav class="navbar">
+		<!-- navbar_header -->
+		<div id="navbar-header-wrap">
+			<div class="container">
+				<div class="navbar-header">
+					<a  title="Home"  class="navbar-brand "  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a>
+					<button id="mobile_nav_btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target-custom="#navigation">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars fa-lg"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- navbar_header -->
+
+		<!-- main_nav -->
+		<div class="collapse navbar-collapse" id="navigation">
+			<div id="top-nav" class="top-section">
+				<div class="container">
+					<div class="menu-search-form">
+	<form class="navbar-form" id="top-search" name="frmSearch" method="GET" action="https://www.businesswaretech.com/search-results">
+		<input name="sstr" type="text" placeholder="Search" title="Search" />
+		<button class="btn-toggle" type="button"><span class="fa fa-search"></span></button>
+		<button class="btn-close" type="button"><span class="fa fa-close"></span></button>
+	</form>
+</div>
+
+
+<script>
+	var $topmenuSearchApp = $(".menu-search-form");
+	var $searchControl = $("#top-search");
+	var $searchControlInput = $searchControl.find('input[name="sstr"]');
+
+	$searchControl.submit(function(e){
+		if ($searchControl.find('input[name="sstr"]').val()=="") {
+			e.preventDefault();
+		}
+	});
+
+	$searchControlInput.focusout(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.removeClass("expanded");
+		}
+	});
+
+	$topmenuSearchApp.find("#search-toggle-link, .btn-toggle").click(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.addClass("expanded");
+			$searchControlInput.focus();
+		} else {
+			$searchControl.first().submit();
+		}
+	});
+
+	$searchControl.find(".btn-close").click(function(){
+		$searchControl.removeClass("expanded");
+	});
+</script>
+					<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+					<div class="social-block">
+						<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+						<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+						<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+					</div>
+				</div>
+			</div>
+			<div id="main-nav">
+				<div class="container">
+					
+	<ul class="nav navbar-nav">
+		
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Services</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Tech Stack</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../frontend-development.html">Frontend</a></li>
+			
+				<li class=""><a  class="" href="../backend-development.html">Backend</a></li>
+			
+				<li class=""><a  class="" href="../mobile.html">Mobile</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Expertise</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../computer-vision.html">Computer vision</a></li>
+			
+				<li class=""><a  class="" href="../chat-apps.html">Chat apps</a></li>
+			
+				<li class=""><a  class="" href="../health-and-fitness-apps.html">Fitness apps</a></li>
+			
+				<li class=""><a  class="" href="../enterprise-portals.html">Enterprise portals</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Focus</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../ai-and-machine-learning.html">AI & Machine learning</a></li>
+			
+				<li class=""><a  class="" href="../architecture-and-cloud-engineering.html">Cloud engineering</a></li>
+			
+				<li class=""><a  class="" href="../mvp-and-startups.html">MVP & Startups</a></li>
+			
+				<li class=""><a  class="" href="../business-automation.html">Business automation</a></li>
+			
+					</ul>
+				</li>
+			
+					</ul>
+				</li>
+			
+				<li class=""><a  class="" href="../case-studies.html">Case Studies</a></li>
+			
+				<li class=""><a  class="" href="../portfolio.html">Portfolio</a></li>
+			
+				<li class=""><a  class="" href="../about-us.html">Company</a></li>
+			
+		<li class="menu-btn-item"><a   class=""  href="../contact.html">Contact</a></li>
+	</ul>
+	
+				</div>
+			</div>
+		</div>
+		<!-- main_nav -->
+
+	</nav>
+</header>
+
+
+
+
+	<section class="internal-header bg-red-gradient overlay-color-pattern color-white">
+	<div class="container">
+		<h1>Blog</h1>
+	</div>
+</section>
+
+
+	<section id="blog-module-wrap">
+		<section id="blog-post" class="content-section">
+			<div class="container">
+				<div class="blog-post-header mb mb-big-xs">
+					<div class="header-wrap">
+						<h1>Building a Video Call App: Everything You Need To Know About Video Chat in 2020</h1>
+						<div class="textbox mb-half">
+							<div class="post-date small">
+								<span>December 3, 2020</span>
+								
+							</div>
+						</div>
+						<div class="post-tools small">
+							
+								<div class="item social-links">
+									
+	<div class="addthis_sharing_toolbox" style="margin-bottom:-5px;">
+		<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			<a class="a2a_button_facebook"></a>
+			<a class="a2a_button_twitter"></a>
+			<a class="a2a_button_email"></a>
+		</div>
+	</div>
+
+								</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<!-- main-col -->
+					
+					<div class="col-md-12">
+					 
+							<div class="textbox">
+								<img alt="Building a Video Call App: Everything You Need To Know About Video Chat in 2020" src="../files/blog/items/videocall-full-(1).jpg" />
+							</div>
+						
+
+						<div class="post-content mb-big">
+							<h2>Contents</h2>
+							<div class="textbox">
+								<ol id="tocList"></ol>
+							</div>
+						</div>
+
+						<div id="blog_main_content_wrap" class="textbox mb">
+							<p>With the pandemic lockdown and consequent growth of remote work, organizations and individuals are embracing tools that allow personal communication with friends, customers, or employees working remotely.</p>
+
+<p>This reality has led to a fast rise in the popularity of video calling apps and revenue growth. In 2020, we&rsquo;ve witnessed the video conferencing company Zoom <a href="https://www.inc.com/jason-aten/zoom-is-now-worth-130-billion-reason-why-is-simple.html">grow to a staggering $130 billion in valuation</a>, which is over 100 percent increase Year on Year. This meteoric rise in value is due to the lockdown and growing demand for video chat.</p>
+
+<p>On a broad market level, <a href="https://www.fortunebusinessinsights.com/industry-reports/video-conferencing-market-100293#:~:text=The%20global%20video%20conferencing%20market,9.7%25%20during%20the%20forecast%20period.">forecasts indicate that the video conferencing market</a> will grow year on year at a CAGR (compound annual growth rate) of 9.9%. Considering the market forecasts and shifting work culture, building a video conferencing application in 2020 is a viable business idea.</p>
+
+<p>If you&rsquo;re looking to build a video call application, this in-depth guide is a must-read. We will discuss the process of developing a video conferencing app from the ground up &ndash; video calling app market, steps to building a video calling app, monetization strategy, and everything in-between.</p>
+
+<p><div class="textbox-cta "><span class="fa fa-exclamation"></span><div class="content-wrapper"><h4 class="mb-half">Looking for a development team?</h4><p>Send us details of your project and we will get back with a time and price estimation</p>
+</div><a  href="../contact.html" class="btn btn-default"><span>Get In Touch</span></a></div></p>
+
+<h2>Video Call Apps</h2>
+
+<p>Although virtual, video calling makes communication more personal and genuine. This fact has pushed the adoption of video chatting apps as a tool for personalized communication.</p>
+
+<p>In messaging apps like WhatsApp and Facebook messenger, video calling is one of the most used types of communication. Since 2017, <a href="https://www.businessofapps.com/data/whatsapp-statistics/#:~:text=In%20the%20same%20statement%20from,total%20of%20340%20million%20minutes.">over 55 million video calls are made on WhatsApp</a> daily.</p>
+
+<p>Nowadays, the video call feature has become standard in person-to-person (P2P) mobile communication apps like WhatsApp and Viber. These messaging apps are mostly used on mobile. On the other hand, business apps like Skype and Zoom offer video call functions on mobile, desktop, and web.</p>
+
+<p>Compared to messaging apps, business video conferencing apps offer a wider range of options because their target audience operates in formal and informal settings. In formal settings, laptops and desktops are mostly used for work, while in informal settings, anything goes &ndash; mobile phone, laptop, desktop, and tablets.</p>
+
+<h2>Types of Video Calling Apps</h2>
+
+<p>Most video calling apps are built with a specific group of audience in mind. Usually, the preferences of the target audience determine the features built into the app.</p>
+
+<p>Video calling apps fall into 3 categories: messaging apps (person to person communication apps), conferencing apps, and entertainment apps.</p>
+
+<p><strong>Messaging apps</strong>: WhatsApp, Telegram, Messenger, and Viber are excellent examples of messaging apps with a video calling function. These apps are designed to improve communication between people, and video calling is the highest form of virtual communication. However, messaging apps have a participant limit for video calls. For example, WhatsApp allows up to 8 participants, and Messenger has the same participant limit of 8 people per video call. Telegram only allows video calls between 2 people.</p>
+
+<p>At Businessware Technologies, we have developed a video call app which can be used as a standalone application or as a module which can be integrated into an existing system, like a website, a mobile app, etc.</p>
+
+<p align="center"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/hmZ-JuktF0w" width="560"></iframe></p>
+
+<p><strong>Conferencing apps</strong>: Conferencing apps are designed for businesses. As the name implies, a conferencing app can host a virtual conference of up to 300 people. Skype and Zoom are the most popular apps in this category. Depending on your subscription plan, Zoom has a video call participant limit between 100 &ndash; 1000. On the other hand, Skype has a limit of 250 persons for video calls.</p>
+
+<p>In terms of participant capacity for video conferencing, Zoom, Skype, Cisco Webex Meetings, and GoToMeeting have a similar limit of at least 200 participants.</p>
+
+<p><strong>Video apps for business</strong>: this category includes a number of apps and systems for video calling which aim to solve specific problems. They may be similar to regular video call apps, but they include a number of features which are specific to its area of application. For example, growth-focused businesses in the grocery/retail industry are <a href="how-video-shopping-will-save-retail-during-the-pandemice2c9.html?utm_source=referral&amp;utm_medium=quora&amp;utm_campaign=retail">offering video shopping to remote shoppers</a>. This option allows customers to shop through a video call. When the customer calls-in for a product, a shopkeeper shows the caller the products on the shelf to choose from. This way, shoppers have more control of the remote shopping process.</p>
+
+<p>Another area of video calls for business which has grown significantly in the recent time are video consultations. Healthcare providers, marketplace consultants, layers and others benefit greatly from a one on one contact with their clients. Remote consultation with a doctor, a seller or a layer can all be done through a video call module integrated into a website or a mobile app.</p>
+
+<p><strong>Video streaming apps</strong>: video streams can be used both for entertainment, like Discord, or to solve specific business problems. One example is remote monitoring of industrial processes which take a long time, like 3D printing or a conveyor belt in a manufacturing facility.</p>
+
+<p align="center"><img alt="" src="../files/content/blogimg/video%20chat/video-call-app-i-620-(1).png" /></p>
+
+<h2>How to Build a Video Call App</h2>
+
+<p>It&rsquo;s no secret that there are many proven solutions for video calls on the market with millions of users, so a question arises, why create another video chat?</p>
+
+<p>The motivation for creating a video call app can be different. Due to the global pandemic, the demand for video calling services has increased significantly, and those who previously never used video calls are now avid users.</p>
+
+<p>According to Priori Data, the download of Houseparty, Zoom, and Skype surged between January and March. Zoom was downloaded over 20 million times in March, which is a 100 percent increase compared to 2.1 million downloads in January.</p>
+
+<p>With the surge in usage of video conferencing apps and the growing number of video call apps, users are bound to explore options and choose the best platforms. In such circumstances, you can try to &ldquo;entice&rdquo; users by offering them a service that will be ideal for specific tasks.</p>
+
+<p>Also, platforms that previously did not have video chats can expand their functionality by implementing calls. For example, a customer asked us to implement a video chat for their platform to help people suffering from dementia and Alzheimer&rsquo;s disease.</p>
+
+<p>Building a video calling application that would serve consumers in a specific field is no small task. There are several factors to consider before executing the project and a few factors to review after building the app. From experience, the pre-app development activities determine the success of an app development project. With that in mind, the first step to building a video calling app is to identify a market and your audience.</p>
+
+<p>Knowing your audience will help you design an app that meets their needs. For example, if you want to build an entertainment video chat app for content creators and consumers, then filters and video effects are compulsory features. Such features are not needed in an enterprise video chat app. So choosing and researching your target market brings clarity to your project.</p>
+
+<h2>Video Chat App Features</h2>
+
+<p>After choosing your market, the next step is to choose your app&rsquo;s main features. The video conferencing app market is super competitive, so your app should retain new users. Security, privacy, and interface are vital features that a consumer considers before choosing a product. So these features should have high priority from the get-go.</p>
+
+<h4>Security</h4>
+
+<p>This feature is top on the list of factors that influence a consumer&rsquo;s decision to use a platform. As a video call app provider, you must show your consumers that your application is secure. Good marketing can help convince your target market, but only a robust security protocol can convince hackers that your app is foolproof. It is common for hackers to test an application&rsquo;s security to steal information or hijack the system for a ransom.</p>
+
+<p>The current video streaming technology for data encryption is WebRTC. It is stable and only transmits data over HTTPS. Reliability of working with user data is one of the critical advantages of using such solutions.</p>
+
+<p>Another way to ensure security is to use two-phase authorization (2FA) when logging in to the app. This security protocol requires users to provide two authentication factors before accessing their account. This way, 2FA prevents unauthorized account access even when a hacker has the account&rsquo;s username and password. IdentityServer provides an exemplary implementation of the two-factor authorization, but there are other ready-made solutions.</p>
+
+<p align="center"><img alt="" src="../files/content/blogimg/video%20chat/2-login2-(1).png" /></p>
+
+<h4>Onboarding</h4>
+
+<p>Since there are so many video calling apps on the market, it is very important to retain new users. To do this, we recommend planning the first session of a new client correctly. Show them a clear and interesting tutorial and offer a free call(s) after sign up. This way, the user will immediately have a positive communication experience, which means their loyalty will increase.</p>
+
+<h4>Call Interface</h4>
+
+<p>One of the most critical tasks when designing a video chat interface is to develop an interface that the user interacts with during a call. The main requirement is that the interface should intuitively provide the functions familiar to the user: receiving and declining a call, volume control, switching between the phone&rsquo;s speakers and cameras.</p>
+
+<h4>Contacts</h4>
+
+<p>When a user is in the app, it is very important that they can immediately call one of their contacts. Otherwise, there is a high risk that the user will delete the app without ever using it. This is why video chats import contacts from other sources. The easiest way is to take contacts from the user&rsquo;s phone book, but you can also use social networks. To get a list of contacts, you can use one of the libraries for your chosen platform. For example, ReactNative has a react-native-contacts library.</p>
+
+<h2>How Do You Create a Video Conferencing Application?</h2>
+
+<p>Following a standard procedure of app development and risk management, an early version of the product should be released before the final app. This early version of the product is called an MVP. An MVP allows you to test your app on the market before investing more time and money into a full fledged development.</p>
+
+<p>The primary differences between an MVP and a mature application are features and cost. An MVP has fewer features (only core features) than a final product. Consequently, it takes less time and money to build an MVP.</p>
+
+<h2>Video call app - MVP</h2>
+
+<h3>Core Features of a Video Call MVP</h3>
+
+<p>As stated earlier, an MVP is a beta version of the product and only has the core features. From experience, the core features of an MVP app include:</p>
+
+<h4>Log In (Registration)</h4>
+
+<p>Registration is a key feature of an app. It allows users to create a profile which increases retention. However, most video chat apps make registration optional to simplify the process of using the application. This way, seasonal users can make use of the app without registering.</p>
+
+<p>When developing the registration module, it is best to use a mobile phone as the login format. On one hand, this is one of the most accessible formats, and on the other hand, it is a fairly reliable user ID. In addition, this format is used everywhere, which means that it is familiar to users.</p>
+
+<p align="center"><img alt="" src="../files/content/blogimg/video%20chat/1-login1-(1).png" /></p>
+
+<p>To implement a login, you can use ready-made solutions; however, you must choose a reliable and proven service because data safety depends on this choice. For example, Amazon provides good solutions.</p>
+
+<h4>Profile Management</h4>
+
+<p>After registration, users are assigned a profile and an ID. The profile contains information the users want to share &ndash; name, phone number, email, social media handle, occupation, etc. The profile feature allows users to further personalize their experience on the app. Also, it can be integrated with payment tools to make the subscription process easy.</p>
+
+<h4>Contact List</h4>
+
+<p>People download video conferencing apps to connect with their contacts. So a video chat app must have a contact list feature. There are two types of contact lists: phone and universal contact list. Your app should support both types. Users should access their phone contacts through your app and find other users with their ID.</p>
+
+<p><strong>Note</strong>: The app must request permission from the user before accessing the contacts on their phone.</p>
+
+<p align="center"><img alt="" src="../files/content/blogimg/video%20chat/4-contacts-(1).png" /></p>
+
+<h4>Video Calls</h4>
+
+<p>Video calling is the key function of a video chat app. So a video chat MVP must be able to stream video between users. Depending on your target audience, you should add fancy video call features to make your product stand out.</p>
+
+<p>If you&#39;re building an entertainment app, consider adding filters and other effects to the video call function. Although such features can increase the development time of the MVP, it will positively affect user retention.</p>
+
+<p>When it comes to video communication, quality is essential. Consumers frown at video call glitches like buffering, dropped calls, etc. Although the user&#39;s network bandwidth determines the call quality, your app should have the capacity to stream in HD quality.</p>
+
+<p align="center"><img alt="" src="../files/content/blogimg/video%20chat/3-incoming-video-call-(1).png" /></p>
+
+<h4>Group Calling</h4>
+
+<p>The person-to-person video call feature might seem sufficient for an MVP, but it isn&#39;t due to high competition. The video chat app market has big players with millions of users already. If you want to gain some of those users, your product must match or exceed the benefits those apps offer their users. With that in mind, group video calling should be supported by your MVP.</p>
+
+<p>The participant limit for group video calls should be suited to your audience and industry standard. If you&#39;re targeting entertainers, like Houseparty, consider allowing up to 20 users per video call. Enterprise users may need a higher limit, from 50 &ndash; 1000 callers per session.</p>
+
+<h4>Voice Calls</h4>
+
+<p>By default, a video chat app supports audio transfer during a video call. So it should be easy to build a voice call feature into your MVP. This way, you expand the functionality of your application.</p>
+
+<h4>Text Chat</h4>
+
+<p>A good MVP should have a text chat feature as it increases the number of your users&#39; communication channels, which is good for your marketing and user retention.</p>
+
+<h4>Push Notification</h4>
+
+<p>Push notifications are a useful feature that improves app usage and user interaction with other users on the app. Notifications inform users of new messages, app updates, incoming video or voice calls, and event reminders.</p>
+
+<h4>End to End Encryption</h4>
+
+<p>Again, security is a vital feature of any app. End-to-end encryption is a security protocol that makes communication between two users secure. The sender&#39;s message is encrypted on their device and is decrypted on the receiver&#39;s device. This process eliminates the chances of a message hijack.</p>
+
+<h3>Features Of a Video Call App - Mature Version</h3>
+
+<p>The mature version of your product will have all MVP features along with several additional ones. These add-ons should make the app more user-friendly and competitive.</p>
+
+<p>For a video call app, filters and stickers, noise cancellation and screen sharing, are add-on features that can improve user experience. So add-on features are essential, although secondary to core features like security.</p>
+
+<h4>Filters and Stickers</h4>
+
+<p>Do you want to create a video call app that is personalized for users? Adding a filter and sticker feature is an excellent way to personalize the app. Filters are virtual effects that change the look of the user. These features make an app engaging and memorable.</p>
+
+<h4>Noise Cancellation</h4>
+
+<p>A useful feature for making calls in a noisy environment. The noise cancellation protocol uses sound filter commands to block out noise in the background.</p>
+
+<h4>Screen Sharing</h4>
+
+<p>A standard feature in video call apps for business, screen sharing allows users to share their screen with a caller. This feature is excellent for webinars, online tutorials, and more.</p>
+
+<h2>Steps to Build a Video Chat App</h2>
+
+<p>The process of building an MVP and a mature app is usually the same.</p>
+
+<p>The best way to describe how to build a video call app is to explain the process based on UI, front-end to back-end structure. Apps are divided into two parts &ndash; front end (visible part of the product) and back end (invisible part aka the engine).</p>
+
+<p>Each part of an app is built with a specific technology and requires a unique set of skills. You can hire talents for each stage of the development or hire a development team like Businessware Technologies to build your product from the ground up.</p>
+
+<p><strong>UI/UX (User Interface design)</strong> &ndash; Simply put, the user interface is the skin/cover of an app, like a book cover. The UI design of an app determines the app&rsquo;s appearance, so it makes the first impression.</p>
+
+<p>When it comes to UI design, minimalism and innovation win the game every time. So your app&rsquo;s User interface must be intuitive and minimalist. You can hire a UI/UX expert for this design stage or use a development team with a UI/UX designer.</p>
+
+<p align="center"><img alt="" src="../files/content/blogimg/video%20chat/design-1.png" /></p>
+
+<p><strong>Front end</strong> &ndash; The front-end of an app is right under the UI. This is the part that users can see and operate to perform an action. For example, the &ldquo;send button&rdquo; of an email application.</p>
+
+<p>There are different technologies for building the front-end of a video chat app, such as Angular and React (JavaScript frameworks).</p>
+
+<p><strong>Back-end</strong> &ndash; For an app, the back-end is made of server frameworks and database connections. You can get ready-made solutions or build your framework from scratch. The first option is a faster route to building a video chat app, while the second option offers more control of your product, but it is time and capital intensive.</p>
+
+<p>That said, these are the steps to building a video chat app.</p>
+
+<h3>Choose a platform</h3>
+
+<p>Implementing an MVP is a way to test your business ideas and adjust the product based on the feedback. Therefore, for the first version, it may be advisable to save money by releasing the app only on one platform. The choice of platform depends on who your target audience is and what features you plan to implement.</p>
+
+<p>In today&rsquo;s world, most content is consumed from a mobile phone, so MVP is often implemented for one or more mobile platforms. In general, you can&rsquo;t say which platform will be easier to implement the project on: each of them has its challenges. When choosing a platform, you need to consider what features are planned for implementation.</p>
+
+<h3>Analyze Server Implementation</h3>
+
+<p>At the start of the project, you need to analyze where the server will be located: Amazon Kinesis, Twilio, or your server. Analyzing the interaction with the server and the required API can significantly affect the application architecture.</p>
+
+<h3>Analyze What Customization Is Planned In The Future</h3>
+
+<p>Any customization can be potentially problematic, which means that when choosing a technology stack, you need to consider what is planned for implementation in the future. Otherwise, you may find yourself in a situation where the desired customization in the second iteration of the product will cause problems or will not be implemented at all within the initially selected technology stack.</p>
+
+<p>For example, when implementing video calls on ReactNative, keep in mind that this is an add-on to native platforms, which means that working with calls can be implemented differently for different operating systems.</p>
+
+<p>Potentially problematic areas in video chats are initializing and controlling a call from a locked screen or the &rdquo;dead&rdquo; state of the app, especially when you need to implement custom screens.</p>
+
+<h3>Application Architecture</h3>
+
+<p>You can approach the video chat architecture in different ways:</p>
+
+<h4>Develop everything from scratch</h4>
+
+<p>This is a good option for a mature application when you need maximum system flexibility for custom requirements and minimal dependence on third-party systems.</p>
+
+<p><strong>Upsides</strong>: Maximum flexibility</p>
+
+<p><strong>Downsides</strong>: Time and capital intense</p>
+
+<h4>WebRTC</h4>
+
+<p>There are also time-tested ready-made solutions that will reduce development time and the potential bugs. One of the most common solutions is WebRTC, a technology that allows direct peer-to-peer connection.</p>
+
+<p><strong>Upsides</strong>: Significant money savings</p>
+
+<p><strong>Downsides</strong>: Need for STUN, TURN and Signaling servers</p>
+
+<p>WebRTC can connect one client to another directly and drive traffic between them, but how these clients &rsquo;meet&rsquo; is a problem for developers.</p>
+
+<p>For example, when a user logs in to the Internet via subnets or VPNs, the real addresses of the client are hidden. Therefore, to establish a p2p connection, you need to implement:</p>
+
+<ul>
+	<li>a STUN server so that both clients pass their external addresses to it</li>
+	<li>a TURN server through which the traffic will pass if the p2p connection could not be established</li>
+	<li>a Signaling server which signals that two clients want to start a call</li>
+</ul>
+
+<p>If the STUN server is relatively simple to implement, the TURN server should have high performance for sending video traffic and high stability. In addition, it is expensive to maintain such servers, which is impractical for PoC.</p>
+
+<p>To solve that problem, there are ready-made solutions that provide TURN and STUN servers, and developers only need to implement the logic. One of these web solutions is Amazon Kinesis. However, Amazon Kinesis does not provide a mature solution for group video chats, which is a significant limitation. Another limitation of the technology is limited browser support: the app may not work in all browsers, especially Edge and Internet Explorer.</p>
+
+<h4>Twilio</h4>
+
+<p>Another solution suitable for both web and mobile projects is Twilio. This solution allows you to organize chat rooms for group calls. Also, Twilio has a great interface and good documentation with examples, so it is a library that is very easy to get started with.</p>
+
+<p><strong>Upsides</strong>: Good documentation</p>
+
+<p><strong>Downsides</strong>: Limited flexibility</p>
+
+<h2>How to Monetize a Video Call App</h2>
+
+<h3>Freemium</h3>
+
+<p>The freemium model involves offering consumers access to your app&rsquo;s paid features for a limited period or limited quantity. That means basic functions like video calls should be free. However, it is possible to limit the amount or number of individuals that can be called on a free plan.</p>
+
+<h3>Paid Calls</h3>
+
+<p>This model works for video conferencing applications that support app-to-phone voice calls. When a user wants to call a contact&rsquo;s phone number through the app, they have to purchase call credit.</p>
+
+<p>Usually, app-to-phone calls are cheaper than phone-to-phone calls, and this cost difference is a draw for consumers.</p>
+
+<h2>Cost of Building a Video Chat Application</h2>
+
+<p>A conversation on how to build a video call application is incomplete without reviewing the project&#39;s cost. You need finances to hire the development team and pay for integrations.</p>
+
+<p>Proper budgeting starts with identifying the main elements that require finances. On that note, the primary factors determining the cost of building a video chat app are the app&rsquo;s features and development team.</p>
+
+<h3>Features</h3>
+
+<p>In application development, product features and integrations with other services are primary cost determinants. So it means that more features and integrations will increase the cost and time of development.</p>
+
+<h3>Development Team</h3>
+
+<p>Skill and location are factors that determine the cost of a development team. The fee of highly skilled development teams in North America starts from $60 to $150 per hour. West European developers charge between $45 and $65, and developers from East Europe charge between $20 and $30.</p>
+
+<p><img alt="" src="../files/content/blogimg/video%20chat/saas-map-(1).png" /></p>
+
+<h3>Process</h3>
+
+<p>The standard process of building a video calling app or any technology product is the MVP-final product route.</p>
+
+<p>Building an MVP allows you to test the market before launching. Consequently, it is a less expensive way to launch your product.</p>
+
+<p>It takes approximately 1000 hours to build a custom video calling app. If you want to integrate the video chat function into your existing application, the cost of the project will be lower.</p>
+
+<h2>BWT Projects</h2>
+
+<h3>Cross-platform Video Call App</h3>
+
+<p><img alt="" src="../files/content/blogimg/video%20chat/poc-screenshots-(1).png" /></p>
+
+<p>We have developed <a href="../portfolio/cross-platform-video-call-app.html">a versatile cross-platform app for video calling</a> complete with a web interface. The app features a simple yet modern design and an intuitive interface. It can be used as a standalone app for video calls or as a module that can be integrated into another application or system.</p>
+
+<h3>Video Streaming for Remote&nbsp;Video Monitoring</h3>
+
+<p><img alt="" src="../files/content/blogimg/video%20chat/streams-screenshots2.png" /></p>
+
+<p>One of our clients needed a video streaming service that would allow users to monitor their 3D printers remotely in real time using their smartphones.</p>
+
+<p>We have developed <a href="../case-studies/mobile-app-for-remote-video-monitoring.html">a cross-platform app based on WebRTC and Janus Gateway</a>. The app not only shows the stream, but also includes all of the relevant information available about the process - time to completion, printer temperature, printer status, etc.</p>
+
+<h2>Conclusion</h2>
+
+<p>Building a video conferencing app for enterprise or personal communication is a huge commitment. Execution time, cost, and product quality are dependent on the development team. Therefore, it is crucial to hire a team capable of building your project at a value-driven fee. <a href="../index.html">Businessware Technologies</a> has built video streaming apps and SaaS products for fortune 500 companies. The advantage of our service is the skill level and dedication of our talents to delivering excellent projects.</p>
+
+<p>If you want to know the cost of the development and realization of your video calling app, <a href="../contact.html">send us a message</a>. We will respond with a cost and project analysis and the best way to move forward.</p>
+
+						</div>
+
+						
+							<div class="button-wrap-under-text mb-big">
+								
+									<a href="how-to-build-a-saas-app-for-your-startup.html"><span class="fa fa-angle-left"></span> Previous Post</a>
+								
+									<a href="top-it-outsourcing-fails-of-the-past-decade-and-lessons-we-can-learn-from-them.html">Next Post <span class="fa fa-angle-right"></span></a>
+								
+							</div>
+						
+
+						<div class="post-tools small mb-big">
+							
+								<div class="item social-links">
+									
+	<div class="addthis_sharing_toolbox" style="margin-bottom:-5px;">
+		<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			<a class="a2a_button_facebook"></a>
+			<a class="a2a_button_twitter"></a>
+			<a class="a2a_button_email"></a>
+		</div>
+	</div>
+
+								</div>
+							
+						</div>
+
+						
+
+					</div>
+					<!-- /main-col -->
+
+					
+				</div>
+
+				    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-label="Login">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<form name="frmBlogLogin" method="post">
+	                <div class="modal-header">
+    	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	            <h4 class="modal-title">Login</h4>
+            	    </div>
+	                <div class="modal-body">
+						<div style="display:none;" class="form_status alert alert-danger mb"></div>
+						<div class="form-group mb embed-label">
+							<input title="Login" type="text" name="bu_login" class="form-control" />
+							<label>Login</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Password" type="password" name="bu_password" class="form-control" autocomplete="off"/>
+							<label>Password</label>
+						</div>
+            	    </div>
+	                <div class="modal-footer">
+    	                <button type="button" class="btn btn-transparent" data-dismiss="modal"><span>Close</span></button>
+        	            <button type="submit" class="btn btn-default"><span>Login</span></button>
+            	    </div>
+				</form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-label="Register">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<form name="frmBlogReg" method="post" enctype="multipart/form-data">
+	                <div class="modal-header">
+    	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	            <h4 class="modal-title">Register</h4>
+            	    </div>
+                	<div class="modal-body">
+						<div style="display:none;" class="form_status alert alert-danger mb"></div>
+
+                    	<div class="form-group mb embed-label">
+							<input title="Username" type="text" name="bu_login" class="form-control" />
+							<label>Username*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Password" type="password" name="bu_password" class="form-control" autocomplete="off" />
+							<label>Password*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="First Name" type="text" name="bu_first" class="form-control"/>
+							<label>First Name*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Last Name" type="text" name="bu_last" class="form-control" />
+							<label>Last Name*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Email" type="email" name="bu_email" class="form-control" />
+							<label>Email*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<label>Image (88x80)</label>
+							<div class="upload-control custom_upload_control"><input title="File Name" type="text" placeholder="No File Selected" class="form-control file-name upload_file_caption" DISABLED/><div class="upload_file_btn btn btn-default"><span>Select File</span><input title="File Upload" type="file" name="bu_avatar_image" /></div></div>
+						</div>
+        	        </div>
+	                <div class="modal-footer">
+    	                <button type="button" class="btn btn-transparent" data-dismiss="modal"><span>Close</span></button>
+        	            <button type="submit" class="btn btn-default"><span>Register</span></button>
+	                </div>
+				</form>
+            </div>
+        </div>
+    </div>
+
+			</div>
+		</section>
+
+		
+	<section class="content-section related-section">
+		<div class="container">
+		
+			<h3>You May Like</h3>
+			
+				<div class="related-projects-slider slider-type-blog">
+					
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/projects/180/thumb/blog_poc-landing.jpg" alt="Cross-platform Video Call App" />
+							</div>
+							<div class="content-block">
+								<h6>Cross-platform Video Call App</h6>
+								<a href="../portfolio/cross-platform-video-call-app.html" class="more-link">Read More</a>
+							</div>
+							<a href="../portfolio/cross-platform-video-call-app.html" title="Cross-platform Video Call App" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/blog/items/saas-landing.jpg" alt="How to Build a SaaS App For Your Startup" />
+							</div>
+							<div class="content-block">
+								<h6>How to Build a SaaS App For Your Startup</h6>
+								<a href="how-to-build-a-saas-app-for-your-startup.html" class="more-link">Read More</a>
+							</div>
+							<a href="how-to-build-a-saas-app-for-your-startup.html" title="How to Build a SaaS App For Your Startup" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/blog/items/mvp-landing-cardboard.jpg" alt="How to build an MVP mobile app: a 2020 guide to MVP app development" />
+							</div>
+							<div class="content-block">
+								<h6>How to build an MVP mobile app: a 2020 guide to MVP app development</h6>
+								<a href="how-to-build-a-minimum-viable-product.html" class="more-link">Read More</a>
+							</div>
+							<a href="how-to-build-a-minimum-viable-product.html" title="How to build an MVP mobile app: a 2020 guide to MVP app development" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/15/thumb/blog_streams-landing.jpg" alt="Mobile app for remote video monitoring" />
+							</div>
+							<div class="content-block">
+								<h6>Mobile app for remote video monitoring</h6>
+								<a href="../case-studies/mobile-app-for-remote-video-monitoring.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/mobile-app-for-remote-video-monitoring.html" title="Mobile app for remote video monitoring" class="area-link"></a>
+						</div>
+						
+				</div>
+			
+		</div>
+	</section>
+	
+
+	</section>
+
+
+	<script src="../web/assets/js/jquery.contentstable.js"></script>
+	<script>
+		$("#blog_main_content_wrap").tableOfContents("#tocList");
+		if ($("#tocList").find("li").length==0) $("#tocList").parents(".post-content").remove();
+	</script>
+
+	<link rel="stylesheet" href="../web/modules/blog/css/blog-module.css" type="text/css" />
+	<link rel="stylesheet" href="../web/modules/blog/css/blog-theme.css" type="text/css" />
+
+	<script src="../web/modules/blog/js/main.js"></script>
+
+	<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+	<script src="../web/modules/blog/js/jquery.autogrow-textarea.min.js"></script>
+	<script src="../web/modules/blog/js/post_details.js"></script>
+
+
+
+
+</section>
+<!-- /PAGE_BODY -->
+
+<footer id="footer" class="bg-dark overlay-color-pattern">
+	<div class="container">
+		<div class="row content-section">
+	<div class="col-sm-3 mb-big-xs">
+	<div class="footer-logo"><a  title="Home"  class=""  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a></div>
+	<h6 class="mb-half">Social Media</h6>
+	<div class="social-block">
+		<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+		<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+		<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+	</div>
+</div>
+
+<div class="col-sm-4 mb-big-xs">
+	<h5>US Office</h5>
+	<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+	<div class="phone-block"><a   class=""  href="mailto:sales@businesswaretech.com"><span class="fa fa-envelope"></span>sales@businesswaretech.com</a></div>
+</div>
+
+<div class="col-sm-5 mb-big-xs">
+	<h5>Site Menu</h5>
+	
+		<ul class="footer-menu">
+	<li><a href="../about-us.html">About us</a></li>
+	<li><a href="../case-studies.html">Case Studies</a></li>
+	<li><a href="../portfolio.html">Portfolio</a></li>
+	<li><a href="../blog.html">Blog</a></li>
+	<li><a href="../contact.html">Contact</a></li>
+	<li><a href="../privacy-policy.html">Privacy Policy</a></li>
+</ul>
+					
+	
+</div>
+
+
+</div>
+
+<div class="sep-white"></div>
+	<div class="footer-bottom-section">
+	<div class="small">&copy; BUSINESSWARE TECHNOLOGIES INC., 2003-2021. All rights reserved.</div>
+	
+</div>
+
+	
+	</div>
+</footer>
+
+	<script src="../web/assets/js/bootstrap.min.js"></script>
+
+	<!-- Twitter universal website tag code -->
+<!--script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o2ndw');
+twq('track','PageView');
+</script-->
+<!-- End Twitter universal website tag code -->
+
+
+</body>
+
+<!-- Mirrored from www.businesswaretech.com/blog/building-a-video-call-app-everything-you-need-to-know-about-video-chat-in-2020 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:31:03 GMT -->
+</html>

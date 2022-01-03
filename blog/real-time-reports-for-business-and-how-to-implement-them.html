@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.businesswaretech.com/blog/real-time-reports-for-business-and-how-to-implement-them by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:27:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-178399-12', 'auto');
+                ga('require', 'displayfeatures');
+		ga('send', 'pageview');
+
+	</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60879e0062662a09efc26df1/1f48s2d4p';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=fd6e5a82ee456' async='true'></script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59R9LPM');</script>
+<!-- End Google Tag Manager --><!-- Global site tag (gtag.js) - Google Ads: 1069634492 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1069634492"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1069634492');
+</script><!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '412789549591616');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=412789549591616&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code --><!-- DO NOT MODIFY -->
+<!-- Quora Pixel Code (JS Helper) -->
+<script>
+!function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+qp('init', '7a7c8894782e4b748998df62a8a793b8');
+qp('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/7a7c8894782e4b748998df62a8a793b8/pixel?tag=ViewContent&amp;noscript=1"/></noscript>
+<!-- End of Quora Pixel Code -->
+
+		<link rel="icon" type="image/ico" href="../files/settings/favicon.ico" />
+	
+
+	<title>Real-Time Reports for Business and How to Implement Them</title>
+	<meta name="keywords" content="real-time reports, business analytics, planning" />
+	<meta name="description" content="When managing a large-scale business with dozens of departments and offices, you must have proper analytics that will show you every day how close you are to reaching your business goals." />
+
+	<link rel="canonical" href="real-time-reports-for-business-and-how-to-implement-them.html" />
+
+	<script src="../web/assets/js/jquery.min.js"></script>
+
+    <link href="../web/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../web/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+	
+	   	<link href="../web/assets/js/sumoselect/sumoselect.min.css" rel="stylesheet" />
+    	<script src="../web/assets/js/sumoselect/jquery.sumoselect.min.js"></script>
+	
+
+	<link href="../web/assets/js/slick/slick.css" rel="stylesheet" />
+	<script src="../web/assets/js/slick/slick.min.js"></script>
+
+
+	<link href="../web/assets/css/fonts3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/theme3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/responsive3860.css?v=1" rel="stylesheet" />
+
+
+	
+
+
+	<script src="../web/assets/js/utils3860.js?v=1"></script>
+	<script src="../web/assets/js/main3860.js?v=1"></script>
+
+
+	
+
+	<style>
+		
+	</style>
+
+	
+</head>
+<body>
+    <a title="Scroll Up" aria-label="Scroll Up" class="affix-top" href="#top" id="scrollup" data-spy="affix" data-offset-top="101"><span class="fa fa-long-arrow-up"></span></a>
+
+
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59R9LPM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- PAGE_BODY -->
+<section id="page-wrap">
+	<header id="header">
+	<nav class="navbar">
+		<!-- navbar_header -->
+		<div id="navbar-header-wrap">
+			<div class="container">
+				<div class="navbar-header">
+					<a  title="Home"  class="navbar-brand "  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a>
+					<button id="mobile_nav_btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target-custom="#navigation">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars fa-lg"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- navbar_header -->
+
+		<!-- main_nav -->
+		<div class="collapse navbar-collapse" id="navigation">
+			<div id="top-nav" class="top-section">
+				<div class="container">
+					<div class="menu-search-form">
+	<form class="navbar-form" id="top-search" name="frmSearch" method="GET" action="https://www.businesswaretech.com/search-results">
+		<input name="sstr" type="text" placeholder="Search" title="Search" />
+		<button class="btn-toggle" type="button"><span class="fa fa-search"></span></button>
+		<button class="btn-close" type="button"><span class="fa fa-close"></span></button>
+	</form>
+</div>
+
+
+<script>
+	var $topmenuSearchApp = $(".menu-search-form");
+	var $searchControl = $("#top-search");
+	var $searchControlInput = $searchControl.find('input[name="sstr"]');
+
+	$searchControl.submit(function(e){
+		if ($searchControl.find('input[name="sstr"]').val()=="") {
+			e.preventDefault();
+		}
+	});
+
+	$searchControlInput.focusout(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.removeClass("expanded");
+		}
+	});
+
+	$topmenuSearchApp.find("#search-toggle-link, .btn-toggle").click(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.addClass("expanded");
+			$searchControlInput.focus();
+		} else {
+			$searchControl.first().submit();
+		}
+	});
+
+	$searchControl.find(".btn-close").click(function(){
+		$searchControl.removeClass("expanded");
+	});
+</script>
+					<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+					<div class="social-block">
+						<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+						<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+						<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+					</div>
+				</div>
+			</div>
+			<div id="main-nav">
+				<div class="container">
+					
+	<ul class="nav navbar-nav">
+		
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Services</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Tech Stack</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../frontend-development.html">Frontend</a></li>
+			
+				<li class=""><a  class="" href="../backend-development.html">Backend</a></li>
+			
+				<li class=""><a  class="" href="../mobile.html">Mobile</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Expertise</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../computer-vision.html">Computer vision</a></li>
+			
+				<li class=""><a  class="" href="../chat-apps.html">Chat apps</a></li>
+			
+				<li class=""><a  class="" href="../health-and-fitness-apps.html">Fitness apps</a></li>
+			
+				<li class=""><a  class="" href="../enterprise-portals.html">Enterprise portals</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Focus</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../ai-and-machine-learning.html">AI & Machine learning</a></li>
+			
+				<li class=""><a  class="" href="../architecture-and-cloud-engineering.html">Cloud engineering</a></li>
+			
+				<li class=""><a  class="" href="../mvp-and-startups.html">MVP & Startups</a></li>
+			
+				<li class=""><a  class="" href="../business-automation.html">Business automation</a></li>
+			
+					</ul>
+				</li>
+			
+					</ul>
+				</li>
+			
+				<li class=""><a  class="" href="../case-studies.html">Case Studies</a></li>
+			
+				<li class=""><a  class="" href="../portfolio.html">Portfolio</a></li>
+			
+				<li class=""><a  class="" href="../about-us.html">Company</a></li>
+			
+		<li class="menu-btn-item"><a   class=""  href="../contact.html">Contact</a></li>
+	</ul>
+	
+				</div>
+			</div>
+		</div>
+		<!-- main_nav -->
+
+	</nav>
+</header>
+
+
+
+
+	<section class="internal-header bg-red-gradient overlay-color-pattern color-white">
+	<div class="container">
+		<h1>Blog</h1>
+	</div>
+</section>
+
+
+	<section id="blog-module-wrap">
+		<section id="blog-post" class="content-section">
+			<div class="container">
+				<div class="blog-post-header mb mb-big-xs">
+					<div class="header-wrap">
+						<h1>Real-Time Reports for Business and How to Implement Them</h1>
+						<div class="textbox mb-half">
+							<div class="post-date small">
+								<span>December 16, 2019</span>
+								
+									<span class="post-author">by&nbsp;Tatiana Snigereva</span>
+								
+							</div>
+						</div>
+						<div class="post-tools small">
+							
+								<div class="item social-links">
+									
+	<div class="addthis_sharing_toolbox" style="margin-bottom:-5px;">
+		<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			<a class="a2a_button_facebook"></a>
+			<a class="a2a_button_twitter"></a>
+			<a class="a2a_button_email"></a>
+		</div>
+	</div>
+
+								</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<!-- main-col -->
+					
+					<div class="col-md-12">
+					 
+							<div class="textbox">
+								<img alt="Real-Time Reports for Business and How to Implement Them" src="../files/blog/items/real-time-reports-for-business-how-to-implement2.png" />
+							</div>
+						
+
+						<div class="post-content mb-big">
+							<h2>Contents</h2>
+							<div class="textbox">
+								<ol id="tocList"></ol>
+							</div>
+						</div>
+
+						<div id="blog_main_content_wrap" class="textbox mb">
+							<p class="1">When managing a large-scale business with dozens of departments and offices, you must have proper analytics that will show you every day how close you are to reaching your business goals. If you have hundreds of people working for you, you need to monitor their activities in a way that is quick and efficient. You need to know how much money you have made, how your salary expenses are growing, and what department is the most effective. All of that is achievable with real-time reports for business.<br />
+<o:p></o:p><br />
+A common downfall of businesses with a large number of employees is a lack of real-time reports. The implementation of real-time reports in your business may seem complicated, which often leads businesses to not include them in their financial and workforce planning processes. However, real-time reporting is not as difficult as it seems if you choose an appropriate solution and implement it correctly.<br />
+<br />
+<img alt="" src="../files/content/blogimg/real-time%20reports%20for%20business%20and%20how%20to%20implement%20them/rtm_1_borders-620.png" style="margin-left: 23%;"/></p>
+
+<h3 class="1">Why It&rsquo;s Important&nbsp;</h3>
+
+<ul>
+	<li class="1">Real-time data calculation and strategic workforce planning as a whole are healthy additions to any business, but larger businesses with many employees and a variety of shifts will profit the most. Hotel chains, restaurant chains, cruise liners, and other businesses that require a lot of planning will see the following advantages of strategic planning and real-time data calculation: <o:p></o:p></li>
+	<li class="1"><o:p></o:p>Determine your strengths and weaknesses quickly and access the most recent data on the current state of your business.&nbsp;</li>
+	<li class="1">Easily manageable data that can give you a fairly dependable insight into the future of your business and ensure correct sales and expense forecasting.&nbsp;</li>
+	<li class="1">Fast reports generated in a matter of minutes with no human involvement.&nbsp;</li>
+	<li class="1">Full control of your business plans and their current state.&nbsp;</li>
+	<li class="1">Easy adjustment of your finances since you can see the current, factual information for your income and expenses.&nbsp;</li>
+</ul>
+
+<div class="1">&nbsp;</div>
+
+<h3 class="1">Critical Aspects of Real-Time Planning&nbsp;</h3>
+
+<p class="1">When implementing real-time reporting in your business or looking for an appropriate solution, you should pay special attention to several critical aspects.</p>
+
+<h4 class="1">Gather the Data</h4>
+
+<p class="1">To determine which departments are effective and which ones can use a little more motivation, you need all available data on your income and expenses. In distributed systems, this data is stored in various sources, so implementing a user scenario when data is retrieved simultaneously from multiple sources is relevant for the time of inquiry. There can be data sources that change every second (e.g., sales) or sources that are updated several times per day, such as salary expenses and when people start and end their shifts each day.</p>
+
+<h4 class="1">Present the Data</h4>
+
+<p class="1">All data retrieved is presented in a single format that is defined by a set of analytics. Then the information is presented in graphs and tables for an easy-to-read report. This process allows you to monitor the state of your business plans in real time&mdash;from sales and expenses to budget planning. This is a crucial step in implementing a quality workforce management system into your business.</p>
+
+<h3 class="1">How to Implement Real-Time Management&nbsp;</h3>
+
+<h4 class="1">Choose a System&nbsp;</h4>
+
+<p class="1">A custom system for processing all incoming data in real time can be developed for your specific business needs. It gathers all necessary metrics and data and applies analytical algorithms to flesh out a comprehensive report. We have had an amazing experience developing a staff and wages system for our client from the Faroe Islands that owns a hotel and restaurant chain.&nbsp;&nbsp;<br />
+<img alt="" src="../files/content/blogimg/real-time%20reports%20for%20business%20and%20how%20to%20implement%20them/rtm_2-620.png" style="margin-left: 23%;"/></p>
+
+<h4 class="1">Use Pre-Calculation&nbsp;&nbsp;</h4>
+
+<p class="1">You don&rsquo;t need to calculate values that stay immutable in real time. To lower the workload on your servers, you can calculate these values once and store them until they need to be recalculated according to schedule. For example, salary data for today can be calculated in real time and then for the following days, once every 24 hours. Actual data that does not need to be calculated is taken straight out of the table in runtime.&nbsp;</p>
+
+<h4 class="1">Multi-Platform Approach&nbsp;</h4>
+
+<p class="1">In the staff and wages system (link staff and wages) that we developed, there are several apps that cater to various types of users and are optimized for their specific needs and conditions that apply when they interact with the system. The system offers an API for all authorized users.&nbsp; &nbsp;<br />
+Staff App and Its Functions&nbsp;</p>
+
+<ul>
+	<li class="1">Shift registration&nbsp;</li>
+	<li class="1">Shift and plan management&nbsp;</li>
+	<li class="1">Access to salary and payment documents&nbsp;</li>
+	<li class="1">Vacation management&nbsp;</li>
+	<li class="1">Internal module for communication with co-workers&nbsp;</li>
+	<li class="1">Internal module for receiving system notifications</li>
+</ul>
+
+<h4 class="1">Manager App and Its Additional Functions&nbsp;</h4>
+
+<ul>
+	<li class="1">Shift planning for department employees&nbsp;</li>
+	<li class="1">Department reports&nbsp;</li>
+	<li class="1">Shift approval&nbsp;</li>
+	<li class="1">Employee profile management&nbsp;</li>
+	<li class="1">New employee additions&nbsp;</li>
+	<li class="1">Employee vacation management&nbsp;</li>
+</ul>
+
+<h4 class="1">Administrator App &ndash; A Full-Functioning Desktop Application&nbsp;</h4>
+
+<ul>
+	<li class="1">Employee authorization and profiles&nbsp;</li>
+	<li class="1">Access and management of all departments of the company&nbsp;</li>
+	<li class="1">Salary management&nbsp;</li>
+	<li class="1">Historical employee data access and management&nbsp;</li>
+	<li class="1">Data export to Excel&nbsp;</li>
+	<li class="1">Access to salary calculation for overtime hours&nbsp;</li>
+	<li class="1">Wages, unions, and tax management&nbsp;</li>
+</ul>
+
+<p class="1">All these apps and sub-systems combined comprise a full-fledged custom workforce management system that is used for budget planning and micro-management of income and expenses. They provide all analytics you might need in a convenient form of graphs and tables.&nbsp;&nbsp;<br />
+<br />
+<img alt="Benefits of Real-Time Tracking" src="../files/content/blogimg/real-time%20reports%20for%20business%20and%20how%20to%20implement%20them/rtm_3_border-620.png" style="margin-left: 23%;"/></p>
+
+<h3 class="1">Benefits of Real-Time Tracking</h3>
+
+<p class="1">Below are the benefits our clients have gained from using this system:&nbsp;</p>
+
+<ul>
+	<li>Improved workforce management process with the custom shift planner&nbsp;</li>
+	<li>Accurate budget analytics and forecasting due to a lot of data gathered&nbsp;</li>
+	<li>Reduced salary expenses due to better overtime and wage calculations&nbsp;</li>
+	<li>Detailed employee data collection that ensures successful compliance audits&nbsp;</li>
+</ul>
+
+<h3>What&rsquo;s the Takeaway?</h3>
+
+<div>Real-time data calculation undoubtedly gives you the upper hand in your business planning and management process. It keeps you informed of the current state of your business, including income, expenses, and employee productivity. Any kind of strategic workforce planning system can be tailored to your business and the way you navigate in your industry. Do you want to get started now? Email us, and we&rsquo;d be glad to give you a quote.</div>
+
+						</div>
+
+						
+							<div class="button-wrap-under-text mb-big">
+								
+									<a href="business-case-strategic-workforce-planning-increased-budget-forecasting-efficiency-by-100-for-hotel-chain.html"><span class="fa fa-angle-left"></span> Previous Post</a>
+								
+									<a href="how-to-cut-labor-costs.html">Next Post <span class="fa fa-angle-right"></span></a>
+								
+							</div>
+						
+
+						<div class="post-tools small mb-big">
+							
+								<div class="item social-links">
+									
+	<div class="addthis_sharing_toolbox" style="margin-bottom:-5px;">
+		<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			<a class="a2a_button_facebook"></a>
+			<a class="a2a_button_twitter"></a>
+			<a class="a2a_button_email"></a>
+		</div>
+	</div>
+
+								</div>
+							
+						</div>
+
+						
+						<div class="about-author mb-big">
+							
+								<div class="row mb">
+									<div class="col-sm-3 mb-sm">
+										<div class="short-author-info">
+											
+											<div class="mb-half">
+												<img src="../files/blog/authors/thumb/thumb_tanya.png" alt="Tatiana Snigereva"/>
+											</div>
+											<div class="mb-half">
+												<strong>Tatiana Snigereva</strong>
+											</div>
+											
+										</div>
+									</div>
+									<div class="col-sm-9">
+										<h4 class="mb-half">More by this contributor:</h4>
+										
+											<ul>
+												
+													<li><a href="4-steps-to-strategic-workforce-planning.html">4 Steps to Strategic Workforce Planning [Inforgraphic]</a></li>
+													
+													<li><a href="how-to-cut-labor-costs.html">How to Cut Labor Costs and Keep Your Employees Happy</a></li>
+													
+													<li><a href="why-uber-for-x-is-a-good-option-for-starting-your-local-business.html">Why Uber for X is a Good Option for Starting Your Local Business</a></li>
+													
+											</ul>
+										
+									</div>
+								</div>
+								
+						</div>
+						
+
+					</div>
+					<!-- /main-col -->
+
+					
+				</div>
+
+				    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-label="Login">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<form name="frmBlogLogin" method="post">
+	                <div class="modal-header">
+    	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	            <h4 class="modal-title">Login</h4>
+            	    </div>
+	                <div class="modal-body">
+						<div style="display:none;" class="form_status alert alert-danger mb"></div>
+						<div class="form-group mb embed-label">
+							<input title="Login" type="text" name="bu_login" class="form-control" />
+							<label>Login</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Password" type="password" name="bu_password" class="form-control" autocomplete="off"/>
+							<label>Password</label>
+						</div>
+            	    </div>
+	                <div class="modal-footer">
+    	                <button type="button" class="btn btn-transparent" data-dismiss="modal"><span>Close</span></button>
+        	            <button type="submit" class="btn btn-default"><span>Login</span></button>
+            	    </div>
+				</form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-label="Register">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<form name="frmBlogReg" method="post" enctype="multipart/form-data">
+	                <div class="modal-header">
+    	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	            <h4 class="modal-title">Register</h4>
+            	    </div>
+                	<div class="modal-body">
+						<div style="display:none;" class="form_status alert alert-danger mb"></div>
+
+                    	<div class="form-group mb embed-label">
+							<input title="Username" type="text" name="bu_login" class="form-control" />
+							<label>Username*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Password" type="password" name="bu_password" class="form-control" autocomplete="off" />
+							<label>Password*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="First Name" type="text" name="bu_first" class="form-control"/>
+							<label>First Name*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Last Name" type="text" name="bu_last" class="form-control" />
+							<label>Last Name*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Email" type="email" name="bu_email" class="form-control" />
+							<label>Email*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<label>Image (88x80)</label>
+							<div class="upload-control custom_upload_control"><input title="File Name" type="text" placeholder="No File Selected" class="form-control file-name upload_file_caption" DISABLED/><div class="upload_file_btn btn btn-default"><span>Select File</span><input title="File Upload" type="file" name="bu_avatar_image" /></div></div>
+						</div>
+        	        </div>
+	                <div class="modal-footer">
+    	                <button type="button" class="btn btn-transparent" data-dismiss="modal"><span>Close</span></button>
+        	            <button type="submit" class="btn btn-default"><span>Register</span></button>
+	                </div>
+				</form>
+            </div>
+        </div>
+    </div>
+
+			</div>
+		</section>
+
+		
+	<section class="content-section related-section">
+		<div class="container">
+		
+			<h3>You May Like</h3>
+			
+				<div class="related-projects-slider slider-type-blog">
+					
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/blog/items/strategic-workforce-planning-landing.png" alt="4 Steps to Strategic Workforce Planning [Inforgraphic]" />
+							</div>
+							<div class="content-block">
+								<h6>4 Steps to Strategic Workforce Planning [Inforgraphic]</h6>
+								<a href="4-steps-to-strategic-workforce-planning.html" class="more-link">Read More</a>
+							</div>
+							<a href="4-steps-to-strategic-workforce-planning.html" title="4 Steps to Strategic Workforce Planning [Inforgraphic]" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/blog/items/1.header-500_400.jpg" alt="Business Case: Strategic Workforce Planning Increased Budget Forecasting Efficiency by 100% for Hotel Chain" />
+							</div>
+							<div class="content-block">
+								<h6>Business Case: Strategic Workforce Planning Increased Budget Forecasting Efficiency by 100% for Hotel Chain</h6>
+								<a href="business-case-strategic-workforce-planning-increased-budget-forecasting-efficiency-by-100-for-hotel-chain.html" class="more-link">Read More</a>
+							</div>
+							<a href="business-case-strategic-workforce-planning-increased-budget-forecasting-efficiency-by-100-for-hotel-chain.html" title="Business Case: Strategic Workforce Planning Increased Budget Forecasting Efficiency by 100% for Hotel Chain" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/8/thumb/blog_staff-wages-system-landing5.jpg" alt="Labor Management System for a Restaurant and Hotel Chain" />
+							</div>
+							<div class="content-block">
+								<h6>Labor Management System for a Restaurant and Hotel Chain</h6>
+								<a href="../case-studies/staff-wages-system.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/staff-wages-system.html" title="Labor Management System for a Restaurant and Hotel Chain" class="area-link"></a>
+						</div>
+						
+				</div>
+			
+		</div>
+	</section>
+	
+
+	</section>
+
+
+	<script src="../web/assets/js/jquery.contentstable.js"></script>
+	<script>
+		$("#blog_main_content_wrap").tableOfContents("#tocList");
+		if ($("#tocList").find("li").length==0) $("#tocList").parents(".post-content").remove();
+	</script>
+
+	<link rel="stylesheet" href="../web/modules/blog/css/blog-module.css" type="text/css" />
+	<link rel="stylesheet" href="../web/modules/blog/css/blog-theme.css" type="text/css" />
+
+	<script src="../web/modules/blog/js/main.js"></script>
+
+	<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+	<script src="../web/modules/blog/js/jquery.autogrow-textarea.min.js"></script>
+	<script src="../web/modules/blog/js/post_details.js"></script>
+
+
+
+
+</section>
+<!-- /PAGE_BODY -->
+
+<footer id="footer" class="bg-dark overlay-color-pattern">
+	<div class="container">
+		<div class="row content-section">
+	<div class="col-sm-3 mb-big-xs">
+	<div class="footer-logo"><a  title="Home"  class=""  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a></div>
+	<h6 class="mb-half">Social Media</h6>
+	<div class="social-block">
+		<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+		<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+		<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+	</div>
+</div>
+
+<div class="col-sm-4 mb-big-xs">
+	<h5>US Office</h5>
+	<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+	<div class="phone-block"><a   class=""  href="mailto:sales@businesswaretech.com"><span class="fa fa-envelope"></span>sales@businesswaretech.com</a></div>
+</div>
+
+<div class="col-sm-5 mb-big-xs">
+	<h5>Site Menu</h5>
+	
+		<ul class="footer-menu">
+	<li><a href="../about-us.html">About us</a></li>
+	<li><a href="../case-studies.html">Case Studies</a></li>
+	<li><a href="../portfolio.html">Portfolio</a></li>
+	<li><a href="../blog.html">Blog</a></li>
+	<li><a href="../contact.html">Contact</a></li>
+	<li><a href="../privacy-policy.html">Privacy Policy</a></li>
+</ul>
+					
+	
+</div>
+
+
+</div>
+
+<div class="sep-white"></div>
+	<div class="footer-bottom-section">
+	<div class="small">&copy; BUSINESSWARE TECHNOLOGIES INC., 2003-2021. All rights reserved.</div>
+	
+</div>
+
+	
+	</div>
+</footer>
+
+	<script src="../web/assets/js/bootstrap.min.js"></script>
+
+	<!-- Twitter universal website tag code -->
+<!--script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o2ndw');
+twq('track','PageView');
+</script-->
+<!-- End Twitter universal website tag code -->
+
+
+</body>
+
+<!-- Mirrored from www.businesswaretech.com/blog/real-time-reports-for-business-and-how-to-implement-them by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:28:01 GMT -->
+</html>

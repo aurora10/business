@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.businesswaretech.com/blog/how-and-why-to-migrate-your-sharepoint-2010-workflows-to-power-automate by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:31:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-178399-12', 'auto');
+                ga('require', 'displayfeatures');
+		ga('send', 'pageview');
+
+	</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60879e0062662a09efc26df1/1f48s2d4p';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=fd6e5a82ee456' async='true'></script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59R9LPM');</script>
+<!-- End Google Tag Manager --><!-- Global site tag (gtag.js) - Google Ads: 1069634492 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1069634492"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1069634492');
+</script><!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '412789549591616');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=412789549591616&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code --><!-- DO NOT MODIFY -->
+<!-- Quora Pixel Code (JS Helper) -->
+<script>
+!function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+qp('init', '7a7c8894782e4b748998df62a8a793b8');
+qp('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/7a7c8894782e4b748998df62a8a793b8/pixel?tag=ViewContent&amp;noscript=1"/></noscript>
+<!-- End of Quora Pixel Code -->
+
+		<link rel="icon" type="image/ico" href="../files/settings/favicon.ico" />
+	
+
+	<title>How (and why) to migrate your SharePoint 2010 workflows to Power Automate in SharePoint Online</title>
+	<meta name="keywords" content="sharepoint, sharepoint 2010, sharepoint 2013, sharepoint migration, sharepoint workflow migration, power automate, sharepoint designer" />
+	<meta name="description" content="Long story short: if your business uses SharePoint 2010 workflows, you need to get yourself an expert in both SharePoint Designer and Power Automate to carry out the migration. If you don&#8217;t have one, we at Businessware Technologies can provide seasoned SharePoint experts who will migrate your workflows in no time." />
+
+	<link rel="canonical" href="how-and-why-to-migrate-your-sharepoint-2010-workflows-to-power-automate.html" />
+
+	<script src="../web/assets/js/jquery.min.js"></script>
+
+    <link href="../web/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../web/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+	
+	   	<link href="../web/assets/js/sumoselect/sumoselect.min.css" rel="stylesheet" />
+    	<script src="../web/assets/js/sumoselect/jquery.sumoselect.min.js"></script>
+	
+
+	<link href="../web/assets/js/slick/slick.css" rel="stylesheet" />
+	<script src="../web/assets/js/slick/slick.min.js"></script>
+
+
+	<link href="../web/assets/css/fonts3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/theme3860.css?v=1" rel="stylesheet" />
+	<link href="../web/assets/css/responsive3860.css?v=1" rel="stylesheet" />
+
+
+	
+
+
+	<script src="../web/assets/js/utils3860.js?v=1"></script>
+	<script src="../web/assets/js/main3860.js?v=1"></script>
+
+
+	
+
+	<style>
+		
+	</style>
+
+	
+</head>
+<body>
+    <a title="Scroll Up" aria-label="Scroll Up" class="affix-top" href="#top" id="scrollup" data-spy="affix" data-offset-top="101"><span class="fa fa-long-arrow-up"></span></a>
+
+
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59R9LPM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- PAGE_BODY -->
+<section id="page-wrap">
+	<header id="header">
+	<nav class="navbar">
+		<!-- navbar_header -->
+		<div id="navbar-header-wrap">
+			<div class="container">
+				<div class="navbar-header">
+					<a  title="Home"  class="navbar-brand "  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a>
+					<button id="mobile_nav_btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target-custom="#navigation">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars fa-lg"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- navbar_header -->
+
+		<!-- main_nav -->
+		<div class="collapse navbar-collapse" id="navigation">
+			<div id="top-nav" class="top-section">
+				<div class="container">
+					<div class="menu-search-form">
+	<form class="navbar-form" id="top-search" name="frmSearch" method="GET" action="https://www.businesswaretech.com/search-results">
+		<input name="sstr" type="text" placeholder="Search" title="Search" />
+		<button class="btn-toggle" type="button"><span class="fa fa-search"></span></button>
+		<button class="btn-close" type="button"><span class="fa fa-close"></span></button>
+	</form>
+</div>
+
+
+<script>
+	var $topmenuSearchApp = $(".menu-search-form");
+	var $searchControl = $("#top-search");
+	var $searchControlInput = $searchControl.find('input[name="sstr"]');
+
+	$searchControl.submit(function(e){
+		if ($searchControl.find('input[name="sstr"]').val()=="") {
+			e.preventDefault();
+		}
+	});
+
+	$searchControlInput.focusout(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.removeClass("expanded");
+		}
+	});
+
+	$topmenuSearchApp.find("#search-toggle-link, .btn-toggle").click(function(){
+		if ($(window).width()>991)	 {
+			$searchControl.addClass("expanded");
+			$searchControlInput.focus();
+		} else {
+			$searchControl.first().submit();
+		}
+	});
+
+	$searchControl.find(".btn-close").click(function(){
+		$searchControl.removeClass("expanded");
+	});
+</script>
+					<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+					<div class="social-block">
+						<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+						<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+						<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+					</div>
+				</div>
+			</div>
+			<div id="main-nav">
+				<div class="container">
+					
+	<ul class="nav navbar-nav">
+		
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Services</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Tech Stack</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../frontend-development.html">Frontend</a></li>
+			
+				<li class=""><a  class="" href="../backend-development.html">Backend</a></li>
+			
+				<li class=""><a  class="" href="../mobile.html">Mobile</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Expertise</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../computer-vision.html">Computer vision</a></li>
+			
+				<li class=""><a  class="" href="../chat-apps.html">Chat apps</a></li>
+			
+				<li class=""><a  class="" href="../health-and-fitness-apps.html">Fitness apps</a></li>
+			
+				<li class=""><a  class="" href="../enterprise-portals.html">Enterprise portals</a></li>
+			
+					</ul>
+				</li>
+			
+				<li class="dropdown dropdown_split ">
+					<a  class="placeholder-item" href="javascript:void(0)">Focus</a>
+					<a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-expanded="false"><span class="fa fa-angle-down"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+				<li class=""><a  class="" href="../ai-and-machine-learning.html">AI & Machine learning</a></li>
+			
+				<li class=""><a  class="" href="../architecture-and-cloud-engineering.html">Cloud engineering</a></li>
+			
+				<li class=""><a  class="" href="../mvp-and-startups.html">MVP & Startups</a></li>
+			
+				<li class=""><a  class="" href="../business-automation.html">Business automation</a></li>
+			
+					</ul>
+				</li>
+			
+					</ul>
+				</li>
+			
+				<li class=""><a  class="" href="../case-studies.html">Case Studies</a></li>
+			
+				<li class=""><a  class="" href="../portfolio.html">Portfolio</a></li>
+			
+				<li class=""><a  class="" href="../about-us.html">Company</a></li>
+			
+		<li class="menu-btn-item"><a   class=""  href="../contact.html">Contact</a></li>
+	</ul>
+	
+				</div>
+			</div>
+		</div>
+		<!-- main_nav -->
+
+	</nav>
+</header>
+
+
+
+
+	<section class="internal-header bg-red-gradient overlay-color-pattern color-white">
+	<div class="container">
+		<h1>Blog</h1>
+	</div>
+</section>
+
+
+	<section id="blog-module-wrap">
+		<section id="blog-post" class="content-section">
+			<div class="container">
+				<div class="blog-post-header mb mb-big-xs">
+					<div class="header-wrap">
+						<h1>How (and why) to migrate your SharePoint 2010 workflows to Power Automate in SharePoint Online</h1>
+						<div class="textbox mb-half">
+							<div class="post-date small">
+								<span>October 27, 2020</span>
+								
+							</div>
+						</div>
+						<div class="post-tools small">
+							
+								<div class="item social-links">
+									
+	<div class="addthis_sharing_toolbox" style="margin-bottom:-5px;">
+		<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			<a class="a2a_button_facebook"></a>
+			<a class="a2a_button_twitter"></a>
+			<a class="a2a_button_email"></a>
+		</div>
+	</div>
+
+								</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<!-- main-col -->
+					
+					<div class="col-md-12">
+					 
+							<div class="textbox">
+								<img alt="How (and why) to migrate your SharePoint 2010 workflows to Power Automate in SharePoint Online" src="../files/blog/items/sharepoint-full.jpg" />
+							</div>
+						
+
+						<div class="post-content mb-big">
+							<h2>Contents</h2>
+							<div class="textbox">
+								<ol id="tocList"></ol>
+							</div>
+						</div>
+
+						<div id="blog_main_content_wrap" class="textbox mb">
+							<p>The change has been in the works for a while, but starting November 1st, 2020, Microsoft will begin to remove the ability to run or create SharePoint 2010 workflows from existing SharePoint Online tenants.</p>
+
+<p>Long story short: if your business uses SharePoint 2010 workflows, you need to get yourself an expert in both SharePoint Designer and Power Automate to carry out the migration. If you don&rsquo;t have one, we at Businessware Technologies can provide <a href="../index.html">seasoned SharePoint experts</a> who will migrate your workflows in no time.</p>
+<div class="textbox-cta "><span class="fa fa-thumbs-up"></span><div class="content-wrapper"><h4 class="mb-half">Take a look at our portfolio</h4><p>We have helped companies successfully migrate their workflows to Power Automate</p>
+</div><a  href="../portfolio/migration-of-sharepoint-2010-workflows-to-power-automate.html" class="btn btn-default"><span>See Portfolio</span></a></div>
+
+<p>So what does that mean for your business? Let&rsquo;s start with the basics.</p>
+
+<h2>What is a SharePoint workflow?</h2>
+
+<p>SharePoint workflows are a pre-programmed sequence of actions performed automatically that streamline a variety of business processes.</p>
+
+<p>This can include collecting signatures, collating feedback or approvals from individuals and groups, or tracking the progress of standard procedures and their current status.</p>
+
+<p>Essentially, Microsoft SharePoint workflows are intended to save you time, manpower, and therefore money, as well as ensuring consistency and efficiency to regularly carried out tasks in businesses or organisations.</p>
+
+<h3>Different SharePoint workflows</h3>
+
+<p>There are 5 key kinds of SharePoint workflows:</p>
+
+<ul>
+	<li>Approval Workflows - often the most commonly used type of workflow; it enables you to start an approval chain the moment a document is uploaded.</li>
+	<li>Status Workflows - they enable you to automate the status of documents as and when they&rsquo;re uploaded, then based on the conditions set, automatically change the status of the document based on what happens to it.</li>
+	<li>Notification Workflows - where once a condition has been met within the SharePoint environment, a Notification Workflow sends a notification to the relevant member of the business or organisation to update them or prompt.</li>
+	<li>Automation Workflows - these enable you to automate specific actions based on what&rsquo;s occurring within your SharePoint environment, typically &lsquo;piggy-backing&rsquo; off of other workflows.</li>
+	<li>Custom Workflows - as the suggests a Custom Workflow allows you to create your own mini-program in Sharepoint.</li>
+</ul>
+
+<h3>Why are SharePoint 2010 workflows still used?</h3>
+
+<p>As of fairly recently, SharePoint Online offered two platforms to create workflows - SharePoint 2010 platform and Sharepoint 2013 platform. The former of the two has a much more extensive functionality than the latter, including much more actions which are used to create workflows.</p>
+
+<p>With the introduction of Power Automate, formerly known as Microsoft Flow, Microsoft wanted to create a more &lsquo;cloud-friendly&rsquo; platform and improve the experience of SharePoint Online users. With the three platforms coexisting, there was no need to update legacy workflows until very recently.</p>
+
+<h3>What is Power Automate</h3>
+
+<p>Power Automate was launched by Microsoft in April 2016, clearly with the objective of replacing SharePoint Designer with a new cloud-based service.</p>
+
+<p>The key difference between Sharepoint Designer and Power Automate is that SharePoint Designer workflows only work in SharePoint Online and only within a single site collection. Power Automate is more flexible and extendable. It enables you to automate actions across a range of applications and services as a result of hundreds of available connectors.</p>
+
+<p>Power Automate will enable you to create the following flows:</p>
+
+<ul>
+	<li>Automated flows: Where you can perform one or more tasks automatically when it&#39;s triggered by an event.</li>
+	<li>Button flows: Where you can run repetitive tasks from any location at any time due to the cloud-based nature of Power Automate. This includes from your mobile device, making it more convenient when on the move.</li>
+	<li>Scheduled flows: Where you are performing one or more tasks on a schedule.</li>
+	<li>Business process flows: Where you define a set of steps for users to follow in order to bring them to a preferred outcome.</li>
+	<li>UI flows: Where you can record and automate the playback of manual steps on previous legacy software.</li>
+</ul>
+
+<h2>What does SharePoint 2010 workflow retirement mean for your business</h2>
+
+<p>Since 1st August 2020, SharePoint 2010 workflows have been turned off for any newly created Office 365 tenants using SharePoint Online.</p>
+
+<p>In the next step of the phasing out, from 1st November Microsoft will remove the ability to run or create SharePoint 2010 workflows for existing users.</p>
+
+<h3>Who doesn&rsquo;t need to worry</h3>
+
+<p>Companies who use on-premise SharePoint don&rsquo;t have to worry about the migration for now:</p>
+
+<blockquote>
+<p>SharePoint 2010 and SharePoint 2013 based workflows will continue to be supported with no modification in our previous support posture and continue to be supported for on-premises SharePoint 2016 and SharePoint 2019 platforms until 2026.</p>
+</blockquote>
+
+<p style="text-align: right;"><a href="https://support.microsoft.com/en-gb/office/sharepoint-2010-workflow-retirement-1ca3fff8-9985-410a-85aa-8120f626965f"><strong>Microsoft</strong></a></p>
+
+<h3>Who DOES need to worry</h3>
+
+<p>Those who use SharePoint Online need to act fast. If your SharePoint Online site is currently using 2010 workflows anywhere, those flows will no longer work after November 1st.</p>
+
+<p>But don&rsquo;t slack on your SharePoint 2013 workflows either &ndash; Microsoft has indicated that 2013 workflows will also meet the same fate. So if you are going to go through with the migration process, we recommend that you don&rsquo;t put your 2013 workflows on the back-burner and get everything done at once.</p>
+
+<h3>Why you want to migrate to Microsoft Power Automate regardless</h3>
+
+<p>Making the move and migrating - whether it&rsquo;s immediately necessary or not - is a good way to future proof your business processes and reduce the chance of you needing to implement changes at inconvenient times moving forward.</p>
+
+<p>There are a number of established advantages to Power Automate compared to SharePoint Designer with potentially more to come. Key reasons for making the move to Power Automate now include:</p>
+
+<h4>More actions</h4>
+
+<p>Power Automate simply provides more actions - SharePoint 2010 and 2013 platforms combined and then some - with which to build your workflows, making it more attractive from the developer&rsquo;s standpoint.</p>
+
+<h4>More services available</h4>
+
+<p>By transitioning to Power Automate, you can easily create workflows that manage processes and approvals across a huge list of services, including Dynamics 365, OneDrive for Business, WordPress, Salesforce or Zendesk, and much more. Previously, integration with third-party applications required coding knowledge and a lot of time, whereas Power Automate allows you to integrate them with a few clicks.</p>
+
+<p><img alt="" src="../files/content/blogimg/sharepoit%20migration/sharepoint-migration-v12-620.png" /></p>
+
+<h3>Why the change?</h3>
+
+<p>Microsoft Sharepoint has always traditionally been an &lsquo;on-premises&rsquo; license, installed on servers. However, there has been a growing trend towards cloud-based technology, with companies as big as Google launching cloud-based alternatives and competitors to Sharepoint.</p>
+
+<p>Microsoft attempted to embrace this trend by releasing a cloud-based version: SharePoint Online, but the structure of both the 2010 and 2013 versions of Sharepoint were not built for scalable cloud-based technologies.</p>
+
+<p>As a result, Microsoft released a new application called Microsoft Flow, which was then renamed to Power Automate. This new application functions at a much higher level on the cloud, and enables Microsoft users to benefit from the flexibility of cloud-based technology without compromising on functionality and performance.</p>
+
+<h2>How do I migrate my SharePoint 2010 workflows?</h2>
+
+<p>There are two main ways to do this. The first is in-house, using your own developers or support. Your developers need to be well-versed in SharePoint Designer AND Power Automate, as well as understand what workflows perform what tasks.</p>
+
+<p>Due to the short timeframe, many businesses are choosing the second option - to outsource this functionality as a separate task to a specialist team, like Businessware Technologies, who will analyse your workflows for you and perform the migration much faster.</p>
+
+<p><div class="textbox-cta "><span class="fa fa-exclamation"></span><div class="content-wrapper"><h4 class="mb-half">Migrate your SharePoint 2010 workflows now</h4><p>Need to migrate your SharePoint 2010 workflows to Power Automate? Our team is here to help.</p>
+</div><a  href="../contact.html" class="btn btn-default"><span>Get In Touch</span></a></div></p>
+
+<p>Whether you&rsquo;d plan on doing this in house or externally, firstly you need to understand if your business or organisation is using Sharepoint 2010 workflows. A relatively straightforward way to do this is to use a tool Microsoft released to scan and analyse your SharePoint Online environment, called the SharePoint Modernisation Scanner tool. This will enable you to scan your tenants to establish how or if you will be impacted.</p>
+
+<p>It will generate a report that will show you the distribution of Sharepoint 2010 workflows, and the built-in and custom workflow usage. You&rsquo;ll be able to see which sites and lists use workflows.</p>
+
+<p>Most helpfully, it will tell you a Power Automate upgradability score, which will give you an idea of how well these actions can be upgraded to flows using Power Automate.</p>
+
+<p>Next, you will need to notify any users, workflow developers and the site owners. This should prepare everyone affected for the fact that SharePoint workflows will stop working after the deadline. You&rsquo;ll need to update the training for users in the new system you take on, and ensure any help desk or IT support knows of the move.</p>
+
+<h3>Streamlining the migration to Power Automate</h3>
+
+<p>The short deadline has been the subject of some complaint. Given the announcement was only made in July 2020, this gave users only 4 months to make the transition, at a challenging time in the height of a pandemic.</p>
+
+<p>There were a number of additional issues flagged, with workarounds suggested by Microsoft to overcome these challenges.</p>
+
+<p>The potential pain points and workarounds (where available) include:</p>
+
+<ul>
+	<li>30 day run limit for flows. When using SharePoint Designer, workflows can run continuously, but in Power Automate flows have a 30 day lifespan. Overcoming this limitation means your workflow will need to call itself in a re-entrant way to ensure it continues.</li>
+	<li>HTTP Connector &ndash; If you make calls to Microsoft SharePoint&#39;s REST API, then you can use the &#39;Send HTTP Request to SharePoint&#39; action in the connector. Power Automate also has a generic HTTP connector. However, it is a feature available only to Premium accounts. If you use HTTP calls a lot, you might decide to create a &lsquo;service account&rsquo; user using a Power Automate license, then run these flows through that account.</li>
+	<li>Impersonation - With SharePoint 2010 workflows, you can act as a different user by adding an impersonation step. You are not able to do this in Power Automate.</li>
+	<li>Reusable Flows &ndash; Using some modular thinking, you can create a master flow that a flow per list or library can call, to do the hard work. Another approach is to use flow actions to discover all of the lists or libraries that match some criteria and run the flow on them, on a timer instead of based on events.</li>
+	<li>Workflow history storage &ndash; In the Power Automate dashboard, flows maintain a history in the context of the flow itself. If you need tracking in your sites, you can have the flow log information in a list that you will need to create.</li>
+</ul>
+
+<p>The combination of both the short deadline, and the number of &lsquo;workarounds&rsquo; to negotiate means that a number of people have outsourced this task, to ensure the most efficient transition, even if they have their own in-house team. This approach is set to save time and money, as well as provide the training necessary to embrace Power Automate.</p>
+
+<h2>What&rsquo;s next in the migration to Power Automate?</h2>
+
+<p>If you&rsquo;re currently using Sharepoint 2010 workflows, then you have a very limited amount of time to be ready. You need to make it clear to the team at large what is about to happen, and minimise any potential disruption caused by people assuming workflows will continue to work as normal.</p>
+
+<p>In addition, if you want to continue to streamline your business processes with workflows then you need to make the move asap.</p>
+
+<p>Even if you&rsquo;re using workflows based on Sharepoint Online 2013 platform, you should keep one eye on the clock to some extent. This move is highly likely to widen out to 201 workflows, and with a 4-month deadline for the 2010 version, it&rsquo;s safe to assume they won&rsquo;t hang around.</p>
+
+<p>Making the move ahead of time would be a prudent step, and in addition to being prepared ahead of time, it means you can make greater use of the flexibility provided by Power Automate.</p>
+
+<p>For assistance in planning your next step in migrating to Power Automate, or if you&rsquo;d like to streamline your business processes in the future by making use of it, get in touch by shooting us an email at&nbsp;<a href="mailto:sales@businesswaretech.com">sales@businesswaretech.com</a> to discuss this with a team with over 16 years of software development experience.</p>
+
+						</div>
+
+						
+							<div class="button-wrap-under-text mb-big">
+								
+									<a href="how-to-build-a-minimum-viable-product.html"><span class="fa fa-angle-left"></span> Previous Post</a>
+								
+									<a href="how-to-build-a-saas-app-for-your-startup.html">Next Post <span class="fa fa-angle-right"></span></a>
+								
+							</div>
+						
+
+						<div class="post-tools small mb-big">
+							
+								<div class="item social-links">
+									
+	<div class="addthis_sharing_toolbox" style="margin-bottom:-5px;">
+		<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			<a class="a2a_button_facebook"></a>
+			<a class="a2a_button_twitter"></a>
+			<a class="a2a_button_email"></a>
+		</div>
+	</div>
+
+								</div>
+							
+						</div>
+
+						
+
+					</div>
+					<!-- /main-col -->
+
+					
+				</div>
+
+				    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-label="Login">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<form name="frmBlogLogin" method="post">
+	                <div class="modal-header">
+    	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	            <h4 class="modal-title">Login</h4>
+            	    </div>
+	                <div class="modal-body">
+						<div style="display:none;" class="form_status alert alert-danger mb"></div>
+						<div class="form-group mb embed-label">
+							<input title="Login" type="text" name="bu_login" class="form-control" />
+							<label>Login</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Password" type="password" name="bu_password" class="form-control" autocomplete="off"/>
+							<label>Password</label>
+						</div>
+            	    </div>
+	                <div class="modal-footer">
+    	                <button type="button" class="btn btn-transparent" data-dismiss="modal"><span>Close</span></button>
+        	            <button type="submit" class="btn btn-default"><span>Login</span></button>
+            	    </div>
+				</form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-label="Register">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<form name="frmBlogReg" method="post" enctype="multipart/form-data">
+	                <div class="modal-header">
+    	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	            <h4 class="modal-title">Register</h4>
+            	    </div>
+                	<div class="modal-body">
+						<div style="display:none;" class="form_status alert alert-danger mb"></div>
+
+                    	<div class="form-group mb embed-label">
+							<input title="Username" type="text" name="bu_login" class="form-control" />
+							<label>Username*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Password" type="password" name="bu_password" class="form-control" autocomplete="off" />
+							<label>Password*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="First Name" type="text" name="bu_first" class="form-control"/>
+							<label>First Name*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Last Name" type="text" name="bu_last" class="form-control" />
+							<label>Last Name*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<input title="Email" type="email" name="bu_email" class="form-control" />
+							<label>Email*</label>
+						</div>
+						<div class="form-group mb embed-label">
+							<label>Image (88x80)</label>
+							<div class="upload-control custom_upload_control"><input title="File Name" type="text" placeholder="No File Selected" class="form-control file-name upload_file_caption" DISABLED/><div class="upload_file_btn btn btn-default"><span>Select File</span><input title="File Upload" type="file" name="bu_avatar_image" /></div></div>
+						</div>
+        	        </div>
+	                <div class="modal-footer">
+    	                <button type="button" class="btn btn-transparent" data-dismiss="modal"><span>Close</span></button>
+        	            <button type="submit" class="btn btn-default"><span>Register</span></button>
+	                </div>
+				</form>
+            </div>
+        </div>
+    </div>
+
+			</div>
+		</section>
+
+		
+	<section class="content-section related-section">
+		<div class="container">
+		
+			<h3>You May Like</h3>
+			
+				<div class="related-projects-slider slider-type-blog">
+					
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/blog/items/appcost-landing.jpg" alt="How much does an on-demand service app cost?" />
+							</div>
+							<div class="content-block">
+								<h6>How much does an on-demand service app cost?</h6>
+								<a href="how-much-does-an-on-demand-service-app-cost.html" class="more-link">Read More</a>
+							</div>
+							<a href="how-much-does-an-on-demand-service-app-cost.html" title="How much does an on-demand service app cost?" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/blog/items/mvp-landing-cardboard.jpg" alt="How to build an MVP mobile app: a 2020 guide to MVP app development" />
+							</div>
+							<div class="content-block">
+								<h6>How to build an MVP mobile app: a 2020 guide to MVP app development</h6>
+								<a href="how-to-build-a-minimum-viable-product.html" class="more-link">Read More</a>
+							</div>
+							<a href="how-to-build-a-minimum-viable-product.html" title="How to build an MVP mobile app: a 2020 guide to MVP app development" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/projects/185/thumb/blog_sharepoint-migration-landing.jpg" alt="Migration of SharePoint 2010 workflows to Power Automate" />
+							</div>
+							<div class="content-block">
+								<h6>Migration of SharePoint 2010 workflows to Power Automate</h6>
+								<a href="../portfolio/migration-of-sharepoint-2010-workflows-to-power-automate.html" class="more-link">Read More</a>
+							</div>
+							<a href="../portfolio/migration-of-sharepoint-2010-workflows-to-power-automate.html" title="Migration of SharePoint 2010 workflows to Power Automate" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/2/thumb/blog_finance-department-landing.png" alt="Optimizing Finance Reports with SharePoint" />
+							</div>
+							<div class="content-block">
+								<h6>Optimizing Finance Reports with SharePoint</h6>
+								<a href="../case-studies/optimizing-finance-reports.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/optimizing-finance-reports.html" title="Optimizing Finance Reports with SharePoint" class="area-link"></a>
+						</div>
+						
+						<div class="item">
+							<div class="image-block">
+								<img src="../files/casestudies/6/thumb/blog_orm-with-sp-landing.jpg" alt="Optimizing routine meetings with SharePoint" />
+							</div>
+							<div class="content-block">
+								<h6>Optimizing routine meetings with SharePoint</h6>
+								<a href="../case-studies/procurement-department-optimization.html" class="more-link">Read More</a>
+							</div>
+							<a href="../case-studies/procurement-department-optimization.html" title="Optimizing routine meetings with SharePoint" class="area-link"></a>
+						</div>
+						
+				</div>
+			
+		</div>
+	</section>
+	
+
+	</section>
+
+
+	<script src="../web/assets/js/jquery.contentstable.js"></script>
+	<script>
+		$("#blog_main_content_wrap").tableOfContents("#tocList");
+		if ($("#tocList").find("li").length==0) $("#tocList").parents(".post-content").remove();
+	</script>
+
+	<link rel="stylesheet" href="../web/modules/blog/css/blog-module.css" type="text/css" />
+	<link rel="stylesheet" href="../web/modules/blog/css/blog-theme.css" type="text/css" />
+
+	<script src="../web/modules/blog/js/main.js"></script>
+
+	<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+	<script src="../web/modules/blog/js/jquery.autogrow-textarea.min.js"></script>
+	<script src="../web/modules/blog/js/post_details.js"></script>
+
+
+
+
+</section>
+<!-- /PAGE_BODY -->
+
+<footer id="footer" class="bg-dark overlay-color-pattern">
+	<div class="container">
+		<div class="row content-section">
+	<div class="col-sm-3 mb-big-xs">
+	<div class="footer-logo"><a  title="Home"  class=""  href="../index.html"><img class="" src="../files/user/bwt_logo_left-white-(1).svg" alt="Home" /></a></div>
+	<h6 class="mb-half">Social Media</h6>
+	<div class="social-block">
+		<a   title="LinkedIn" class=""  target="_blank"  href="https://www.linkedin.com/company/2219819/"><span class="fa fa-linkedin-square"></span></a>
+		<a   title="Facebook" class=""  target="_blank"  href="https://www.facebook.com/businesswaretechnologies/"><span class="fa fa-facebook-square"></span></a>
+		<a   title="YouTube" class=""  target="_blank"  href="https://www.youtube.com/channel/UCPdE5ABzi1HyvPNF1iMB43Q?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+	</div>
+</div>
+
+<div class="col-sm-4 mb-big-xs">
+	<h5>US Office</h5>
+	<div class="phone-block"><a   class=""  href="tel:+1-512-782-9977"><span class="fa fa-phone"></span>+1-512-782-9977</a></div>
+	<div class="phone-block"><a   class=""  href="mailto:sales@businesswaretech.com"><span class="fa fa-envelope"></span>sales@businesswaretech.com</a></div>
+</div>
+
+<div class="col-sm-5 mb-big-xs">
+	<h5>Site Menu</h5>
+	
+		<ul class="footer-menu">
+	<li><a href="../about-us.html">About us</a></li>
+	<li><a href="../case-studies.html">Case Studies</a></li>
+	<li><a href="../portfolio.html">Portfolio</a></li>
+	<li><a href="../blog.html">Blog</a></li>
+	<li><a href="../contact.html">Contact</a></li>
+	<li><a href="../privacy-policy.html">Privacy Policy</a></li>
+</ul>
+					
+	
+</div>
+
+
+</div>
+
+<div class="sep-white"></div>
+	<div class="footer-bottom-section">
+	<div class="small">&copy; BUSINESSWARE TECHNOLOGIES INC., 2003-2021. All rights reserved.</div>
+	
+</div>
+
+	
+	</div>
+</footer>
+
+	<script src="../web/assets/js/bootstrap.min.js"></script>
+
+	<!-- Twitter universal website tag code -->
+<!--script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o2ndw');
+twq('track','PageView');
+</script-->
+<!-- End Twitter universal website tag code -->
+
+
+</body>
+
+<!-- Mirrored from www.businesswaretech.com/blog/how-and-why-to-migrate-your-sharepoint-2010-workflows-to-power-automate by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 21:31:37 GMT -->
+</html>
