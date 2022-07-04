@@ -37,7 +37,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png"/>
 
     <link rel="stylesheet" href="style/style.css" />
-    <link rel='shortcut icon' href='/img/favicon.png' type='image/x-icon'/ >
+    <link rel='shortcut icon' href='/img/favicon.png' type='image/x-icon'/>
 
     <!-- HOSTED -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>

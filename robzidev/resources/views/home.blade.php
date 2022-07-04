@@ -55,8 +55,8 @@
             <nav class="flex">
                 <div class="link-wrap">
                     <div class="active page-link" dest="home">home</div>
-                    <a href="https://robzi-portfollio.s3.eu-central-1.amazonaws.com/index-1.html"><div class="page-link" >CV</div></a>
-                    
+                    <a href="https://robzi-portfollio.s3.eu-central-1.amazonaws.com/index-1.html">CV</a>
+                    <!-- <div class="page-link" >CV</div> -->
                     <div class="page-link" dest="about">about</div>
                     <div class="page-link" dest="portfolio">portfolio</div>
                     <div class="page-link" dest="blog">blog</div>
