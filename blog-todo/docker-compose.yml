@@ -1,0 +1,37 @@
+version: "2"
+
+services:
+  db:
+    image: mysql:5.7.22
+    restart: always
+    environment:
+      MYSQL_DATABASE: myapp
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - .dbdata:/var/lib/mysql
+    ports:
+      - 33061:3306
+    networks:
+      - app
+
+  myapp:
+    image: docker.io/bitnami/laravel:9
+    ports:
+      - 8000:8000
+    environment:
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_USERNAME=root
+      - DB_DATABASE=myapp
+      - DB_PASSWORD=root
+    volumes:
+      - "./my-project:/app"
+    depends_on:
+      - db
+    networks:
+      - app
+
+networks:
+  app:
